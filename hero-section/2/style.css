@@ -8,6 +8,8 @@
 body {
   background-color: lightblue;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -29,6 +31,15 @@ nav {
   top: 0;
   left: 0;
   z-index: 9999;
+  max-width: 80rem;
+  right: 0;
+  justify-content: space-between;
+  /* From https://css.glass */
+  background: rgba(43, 42, 42, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(40.1px);
+  -webkit-backdrop-filter: blur(20.1px);
 }
 
 nav ul {
@@ -45,6 +56,7 @@ main {
   position: relative;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -54,6 +66,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  max-width: 80rem;
+  position: relative;
 }
 
 .content {
@@ -67,7 +84,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px red solid;
+  justify-content: center;
+  width: 40%;
+  margin-left: 50px;
   margin-right: auto;
 }
 
@@ -77,19 +96,135 @@ button {
   padding: 8px 20px;
 }
 
-.wrapper {
+#img-wrapper {
   display: flex;
-  width: 300vw;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -2;
 }
 
-.wrapper img {
-  height: 100vh;
-  width: 100vw;
+#img-wrapper img {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+}
+
+.show {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hide {
+  width: 0;
+  height: 0;
+}
+
+/* Radio buttons */
+.radio-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+  gap: 10px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.radio-button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+}
+
+/* Hide the browser's default radio button */
+.radio-button input {
+  margin: auto;
+  position: absolute;
+  z-index: 999;
+  border: none;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* From https://css.glass */
+  background: rgba(43, 42, 42, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(40.1px);
+  -webkit-backdrop-filter: blur(20.1px);
+  font-size: 0;
+  border: 3px solid transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button:hover input ~ .checkmark {
+  background-color: transparent;
+  border: 3px solid #eefb13;
+  font-size: 1rem;
+}
+
+/* Hide radio button on hover */
+.radio-button input:hover {
+  opacity: 0;
+  display: none;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-button input:checked ~ .checkmark {
+  border: 3px solid #eefb13;
+  font-size: 1rem;
+}
+
+.radio-button input:checked {
+  opacity: 0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+}
+/* End of radio buttons */
+
+@media screen and (max-width: 769px) {
+  .content {
+    width: 80%;
+    margin: auto;
+  }
 }
