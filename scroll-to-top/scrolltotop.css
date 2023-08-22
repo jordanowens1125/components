@@ -1,0 +1,43 @@
+:root {
+  --primary: red;
+  --bodyTextColorWhite: white;
+}
+
+body {
+  height: 1000vh;
+}
+
+#scroll-up {
+  position: fixed;
+  z-index: 100;
+  bottom: 1em;
+  right: 1em;
+  padding: 5px;
+  background: linear-gradient(
+    127.08deg,
+    var(--primary) 28.48%,
+    var(--primary) 100.16%
+  );
+  border: none;
+  transition: 1s;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll-up:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+svg {
+  fill: var(--bodyTextColorWhite);
+  color: inherit;
+}
+svg path {
+  stroke: #ffffff; /* Background color against your svg */
+  stroke-width: 20px; /*Between 1px and 2px*/
+}

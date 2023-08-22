@@ -1,3 +1,7 @@
+:root {
+  --primary: #eefb13;
+}
+
 * {
   list-style: none;
   color: inherit;
@@ -6,7 +10,7 @@
 }
 
 body {
-  background-color: lightblue;
+  background-color: #131212;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -23,6 +27,7 @@ nav {
   height: 64px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   max-width: 80rem;
   padding: 20px;
   width: 100%;
@@ -81,19 +86,35 @@ section {
   backdrop-filter: blur(40.1px);
   -webkit-backdrop-filter: blur(20.1px);
   padding: 20px;
+  width: 40%;
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+.show-section {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
-  justify-content: center;
-  width: 40%;
-  margin-left: 50px;
-  margin-right: auto;
+}
+
+.hide-section {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 button {
   width: fit-content;
   border: none;
   padding: 8px 20px;
+  background-color: #eefb13;
+  color: black;
+  border-radius: .5rem;
 }
 
 #img-wrapper {
@@ -110,14 +131,22 @@ button {
   margin-right: auto;
 }
 
-.show {
+.show-bg {
   width: 100vw;
   height: 100vh;
+  transition: 1s;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
-.hide {
+.hide-bg {
   width: 0;
   height: 0;
+  transition: 1s;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 
 /* Radio buttons */
@@ -126,7 +155,6 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
   gap: 10px;
   position: absolute;
   bottom: 30px;

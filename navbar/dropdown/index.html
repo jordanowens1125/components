@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <a href="./">
+        <img src="./images/logo.svg" alt="" srcset="" />
+      </a>
+      <nav>
+        <img src="./images/icon-menu.svg" alt="" srcset="" class="mobile" onclick="showMobileNav()"/> 
+        
+        <div id="nav-modal">
+          <ul class="nav">
+            <img src="./images/icon-close-menu.svg" alt="" class="align-self-end mobile" onclick="hideMobileNav()">
+            <li onclick="handleNavExtension(this)">
+              <span href="#">
+                Features 
+                <img src="./images/icon-arrow-down.svg" alt="">
+              </span>
+              <div class="dropdown closed">
+                <ul class="icons-included">
+                  <li><a href="#" ><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
+                  <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a></li>
+                  <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
+                  <li><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
+                </ul>
+              </div>
+            </li>
+            <li onclick="handleNavExtension(this)">
+              <a href="#">
+                Company
+                <img src="./images/icon-arrow-down.svg" alt="">
+              </a>
+              <div class="dropdown closed">
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+                
+              </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>  
+            <li class="mobile"><button>Login</button></li>
+            <li class="mobile"><button class="register-button">Register</button></li>
+          </ul>
+          <div class="desktop buttons">
+              <button>Login</button><button class="register-button">Register</button>
+            </div>
+        </div>
+      </nav>
+</body>
+<script src="nav.js"></script>
+</html>
