@@ -109,10 +109,17 @@
   }
 
   .copyright {
-    display: flex;
-    justify-content: space-between;
     background-color: var(--copyrightBg);
+    padding: 0px;
+  }
+  
+  .copyright .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
   }
 }
 
@@ -144,8 +151,9 @@ a {
   color: inherit;
 }
 
-section {
+.container {
   padding: 10px;
   max-width: 80rem;
   margin: auto;
+  width: 100%;
 }
