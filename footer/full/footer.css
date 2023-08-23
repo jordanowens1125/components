@@ -1,0 +1,101 @@
+:root {
+  --primary: #90f390;
+}
+
+*{
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 0rem) {
+  footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  footer section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 45%;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  footer li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  footer img {
+    width: 25px;
+  }
+
+  footer section .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  footer .socials a {
+    background-color: rgb(224, 138, 138);
+    padding: 8px;
+    border-radius: 8px;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+}
+
+
+
+@media screen and (min-width: 600px) {
+  footer section {
+    flex-direction: row;
+    gap: 20px;
+  }
+  footer section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer section {
+    flex-direction: row;
+    flex-basis: unset;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  footer section div {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* root info */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 10px;
+}
