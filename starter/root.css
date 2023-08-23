@@ -1,0 +1,15 @@
+/* root info */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  width: 100%;
+}
