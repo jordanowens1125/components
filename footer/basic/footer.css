@@ -1,8 +1,3 @@
-:root {
-  --primary: #72ec72;
-  --primary-bg: rgb(250, 249, 249);
-}
-
 @media screen and (min-width: 0em) {
   footer {
     display: flex;
@@ -37,7 +32,6 @@
 
   footer .socials a:hover {
     border: 2px var(--primary) solid;
-    cursor: pointer;
     transform: scale(1.01);
   }
 

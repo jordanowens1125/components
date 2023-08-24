@@ -7,6 +7,10 @@
   --tertiary: lime;
   --p-sm: 10px;
   --p-md: 25px;
+
+
+--primary-bg: pink;
+  --copyrightBg: yellow;
 }
 
 /* root info */
@@ -35,7 +39,7 @@ button {
   background-color: transparent;
 }
 
-button:hover {
+a:hover, button:hover {
   cursor: pointer;
 }
 
