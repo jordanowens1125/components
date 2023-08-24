@@ -8,10 +8,12 @@
   --tertiary: lime;
   --primary-bg: pink;
   --copyrightBg: yellow;
+  --bannerColor: purple;
 
   /* padding */
   --p-sm: 10px;
   --p-md: 25px;
+  --p-lg: 40px;
 }
 
 /* root info */
@@ -50,11 +52,12 @@ button,
 }
 
 a:hover,
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   cursor: pointer;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: var(--primary);
   color: var(--bodyColor);
 }
@@ -62,6 +65,5 @@ button:hover, .button:hover {
 .btn-tp {
   border: 1px solid var(--borderColor);
 }
-
 
 /* End of button */

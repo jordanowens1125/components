@@ -1,0 +1,36 @@
+/* * {
+  border: 1px red solid;
+} */
+
+@media screen and (min-width: 0) {
+  .sbs {
+    display: flex;
+    gap: var(--p-md);
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(90vh - 90px);
+  }
+
+  .sbs > * {
+    flex: 1 1 0;
+    padding: var(--p-sm);
+  }
+
+  .right img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sbs {
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .sbs > * {
+    padding: 50px var(--p-sm);
+  }
+}

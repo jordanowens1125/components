@@ -1,0 +1,26 @@
+@media screen and (min-width: 0) {
+  .banner-bg {
+    background-color: var(--bannerColor);
+  }
+
+  .banner-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--p-lg);
+  }
+
+  .banner-clients img {
+    width: 100px;
+    object-fit: cover;
+    flex: 1;
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .banner-clients {
+    flex-direction: row;
+  }
+}
