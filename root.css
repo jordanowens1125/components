@@ -1,16 +1,17 @@
 :root {
-  --primary: lightblue;
+  /* Colors */
+  --primary: rgb(14, 174, 228);
   --borderColor: rgb(37, 36, 36);
   --secondary: pink;
   --sectionPadding: 20px;
   --bodyColor: white;
   --tertiary: lime;
+  --primary-bg: pink;
+  --copyrightBg: yellow;
+
+  /* padding */
   --p-sm: 10px;
   --p-md: 25px;
-
-
---primary-bg: pink;
-  --copyrightBg: yellow;
 }
 
 /* root info */
@@ -33,20 +34,34 @@ section {
   padding: var(--sectionPadding);
 }
 
-button {
+/* Text color */
+.primary {
+  color: var(--primary);
+}
+
+/* Background */
+
+/* buttons */
+button,
+.button {
   width: fit-content;
   border: none;
   background-color: transparent;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover, .button:hover {
   cursor: pointer;
+}
+
+.btn-primary{
+  background-color: var(--primary);
+  color: var(--bodyColor);
 }
 
 .btn-tp {
   border: 1px solid var(--borderColor);
 }
 
-.primary {
-  color: var(--primary);
-}
+
+/* End of button */

@@ -1,7 +1,3 @@
-:root {
-  --primary: #eefb13;
-}
-
 * {
   list-style: none;
   color: inherit;
@@ -112,8 +108,6 @@ button {
   width: fit-content;
   border: none;
   padding: 8px 20px;
-  background-color: #eefb13;
-  color: black;
   border-radius: .5rem;
 }
 
