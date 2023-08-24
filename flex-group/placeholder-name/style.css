@@ -1,0 +1,53 @@
+@media screen and (min-width: 0) {
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Makes blog elements the same heigh */
+    align-self: stretch;
+    flex: 1;
+  }
+
+  .blog__cover {
+    height: 275px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 0.8;
+  }
+
+  .blog .blog__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    margin-top: var(--p-sm);
+  }
+}
+
+@media screen and (min-width: 610px) {
+  .blogs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--p-md);
+    justify-content: space-between;
+  }
+  .blog {
+    width: unset;
+    align-self: stretch;
+    /* 400 set here to temporarily fix last 
+    flex wrap item from filling entire bottom row */
+    min-width: 400px;
+    flex: 1;
+  }
+  .blog p {
+    max-width: 80%;
+  }
+}
