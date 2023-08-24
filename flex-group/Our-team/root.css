@@ -3,6 +3,9 @@
   --borderColor: rgb(37, 36, 36);
   --secondary: pink;
   --sectionPadding: 20px;
+  --bodyColor: white;
+  --tertiary: lime;
+  --p-sm: 10px;
 }
 
 /* root info */
@@ -21,6 +24,6 @@ a {
   width: 100%;
 }
 
-section{
-    padding: var(--sectionPadding);
+section {
+  padding: var(--sectionPadding);
 }

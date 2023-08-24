@@ -1,0 +1,27 @@
+@media screen and (min-width: 0em) {
+  .cta-section {
+    background-color: var(--tertiary);
+  }
+
+  .cta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: var(--p-sm);
+  }
+
+  .primary-button {
+    background-color: var(--primary);
+    color: var(--bodyColor);
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cta {
+    justify-content: space-between;
+  }
+}
