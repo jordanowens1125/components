@@ -47,7 +47,7 @@
   }
 
   footer .socials a {
-    background-color: rgb(224, 138, 138);
+    background-color: var(--light-bg);
     padding: 8px;
     border-radius: 8px;
     height: fit-content;
@@ -99,6 +99,7 @@
 
   .copyright {
     background-color: var(--copyrightBg);
+    border-top:var(--borderColor) 3px solid ;
     padding: 0px;
   }
   

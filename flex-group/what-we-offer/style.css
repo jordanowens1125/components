@@ -5,11 +5,12 @@
 @media screen and (min-width: 0) {
   .flex-group-section {
     display: flex;
-    gap: var(--p-sm);
+    gap: var(--p-lg);
     padding: var(--p-md);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .flex-group {
@@ -25,10 +26,10 @@
     gap: var(--p-md);
     align-items: center;
     padding: calc(var(--p-lg) - var(--p-sm));
-    min-width: 200px;
     border-radius: var(--b-radius);
     text-align: center;
-    flex: 1;
+    flex:1;
+    min-width: 300px;
     background-color: var(--light-bg);
   }
 
@@ -55,8 +56,7 @@
 
 @media screen and (min-width: 700px) {
   .flex-item {
-    flex: 0 0 25%;
-    min-width: none;
-    padding: var(--p-lg);
+    flex: 1 0 25%;
+    padding: var(--p-md);
   }
 }

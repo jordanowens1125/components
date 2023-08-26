@@ -1,6 +1,5 @@
 @media screen and (min-width: 0em) {
   .cta-section {
-    background-color: var(--tertiary);
   }
 
   .cta {
@@ -10,13 +9,6 @@
     text-align: center;
     align-items: center;
     gap: var(--p-sm);
-  }
-
-  .primary-button {
-    background-color: var(--primary);
-    color: var(--bodyColor);
-    border: none;
-    padding: 5px;
   }
 }
 

@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   --primary: rgb(21, 182, 164);
-  --borderColor: rgb(204, 232, 241);
+  --borderColor: rgba(1, 25, 54, 255);
   --secondary: pink;
   --sectionPadding: 20px ;
   --headingTextColor: white;
@@ -9,9 +9,9 @@
   --tertiary: lime;
 
   /* background colors */
-  --primary-bg: rgba(0, 20, 45, 255);
-  --copyrightBg: yellow;
-  --bannerColor: purple;
+  --primary-bg-color: rgba(0, 20, 45, 255);
+  --copyright-bg-color: yellow;
+  --banner-bg-color: purple;
   --light-bg: rgba(1, 25, 54, 255);
 
   /* padding */
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: var(--primary-bg);
+  background-color: var(--primary-bg-color);
   color: var(--bodyTextColor);
 }
 
@@ -75,7 +75,7 @@ button,
   border: none;
   background-color: transparent;
   border-radius: var(--b-radius);
-  padding: var(--p-xs);
+  padding: var(--p-sm);
 }
 
 a:hover,
@@ -86,11 +86,12 @@ button:hover,
 
 .btn-primary {
   background-color: var(--primary);
-  color: var(--bodyColor);
+  color: var(--headingTextColor);
 }
 
 .btn-tp {
-  border: 1px solid var(--borderColor);
+  border: 1px solid var(--primary);
+  color: var(--headingTextColor);
 }
 
 /* End of button */
@@ -117,3 +118,17 @@ textarea:focus {
   border: 1px solid var(--primary);
 }
 /* End of inputs */
+
+
+/* img */
+img{
+  border-radius: var(--b-radius);
+}
+/*  */
+
+
+/* Nav */
+header{
+  color: var(--headingTextColor);
+}
+/* End of Nav */

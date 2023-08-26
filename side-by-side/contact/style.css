@@ -26,6 +26,7 @@ select {
     gap: var(--p-sm);
     /* need width 100% to ensure every row stretches on mobile */
     width: 100%;
+    color: var(--headingTextColor);
   }
 
   .sbs .form div {

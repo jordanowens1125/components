@@ -78,13 +78,13 @@ button {
   text-transform: uppercase;
   font-size: 0.85rem;
   box-shadow: 0em -0.2rem 0em;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   width: fit-content;
 }
 
 button:hover {
   background-color: transparent;
-  border: 1px solid pink;
+  border: 3px solid var(--light-bg);
 }
 
 @media (max-width: 884px) {

@@ -27,9 +27,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-left: 1px solid var(--borderColor);
-    border-right: 1px solid var(--borderColor);
-    border-bottom: 1px solid var(--borderColor);
+    border-left: 3px solid var(--borderColor);
+    border-right: 3px solid var(--borderColor);
+    border-bottom: 3px solid var(--borderColor);
+    border-bottom-right-radius: var(--b-radius);
+    border-bottom-left-radius:var(--b-radius) ;
   }
 
   .member__socials {

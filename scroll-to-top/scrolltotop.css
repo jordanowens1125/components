@@ -1,8 +1,3 @@
-:root {
-  --primary: red;
-  --bodyTextColorWhite: white;
-}
-
 body {
   height: 1000vh;
 }
@@ -19,7 +14,7 @@ body {
     var(--primary) 100.16%
   );
   border: none;
-  transition: 1s;
+  transition: .5s;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -34,10 +29,10 @@ body {
 }
 
 svg {
-  fill: var(--bodyTextColorWhite);
+  fill: var(--headingTextColor);
   color: inherit;
 }
 svg path {
-  stroke: #ffffff; /* Background color against your svg */
+  stroke: var(--headingTextColor); /* Background color against your svg */
   stroke-width: 20px; /*Between 1px and 2px*/
 }
