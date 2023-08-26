@@ -33,4 +33,7 @@
   .sbs > * {
     padding: 50px var(--p-sm);
   }
+  .right img {
+    object-fit: cover;
+  }
 }

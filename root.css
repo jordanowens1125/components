@@ -1,19 +1,41 @@
 :root {
   /* Colors */
-  --primary: rgb(14, 174, 228);
-  --borderColor: rgb(37, 36, 36);
+  --primary: rgb(21, 182, 164);
+  --borderColor: rgb(204, 232, 241);
   --secondary: pink;
-  --sectionPadding: 20px;
-  --bodyColor: white;
+  --sectionPadding: 20px ;
+  --headingTextColor: white;
+  --bodyTextColor: rgba(130, 143, 160, 255);
   --tertiary: lime;
-  --primary-bg: pink;
+
+  /* background colors */
+  --primary-bg: rgba(0, 20, 45, 255);
   --copyrightBg: yellow;
   --bannerColor: purple;
+  --light-bg: rgba(1, 25, 54, 255);
 
   /* padding */
+  --p-xs: 5px;
   --p-sm: 10px;
   --p-md: 25px;
   --p-lg: 40px;
+
+  --b-radius: 4px;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--bodyTextColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headingTextColor);
+  font-weight: bold;
 }
 
 /* root info */
@@ -27,13 +49,14 @@ a {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 1120px;
   margin: auto;
   width: 100%;
 }
 
 section {
   padding: var(--sectionPadding);
+  margin: auto;
 }
 
 /* Text color */
@@ -43,12 +66,16 @@ section {
 
 /* Background */
 
+/* End of background */
+
 /* buttons */
 button,
 .button {
   width: fit-content;
   border: none;
   background-color: transparent;
+  border-radius: var(--b-radius);
+  padding: var(--p-xs);
 }
 
 a:hover,
@@ -67,3 +94,26 @@ button:hover,
 }
 
 /* End of button */
+
+/* inputs */
+
+textarea {
+  resize: none;
+  border-radius: var(--b-radius);
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  padding: var(--p-sm);
+  border-radius: var(--b-radius);
+  border: 1px solid var(--borderColor);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid var(--primary);
+}
+/* End of inputs */

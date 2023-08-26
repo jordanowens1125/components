@@ -1,0 +1,76 @@
+/* * {
+  border: 1px red solid;
+} */
+
+input,
+select {
+  height: 40px;
+}
+
+@media screen and (min-width: 0) {
+  .sbs {
+    display: flex;
+    justify-content: center;
+    gap: var(--p-lg);
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sbs > * {
+    flex: 1 1 0;
+  }
+
+  .sbs .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-md);
+    /* need width 100% to ensure every row stretches on mobile */
+    width: 100%;
+  }
+
+  .sbs .form div {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .sbs .form div label {
+    position: absolute;
+    margin: auto;
+  }
+
+  .sbs .form div input,
+  .sbs .form div select,
+  .sbs .form div textarea {
+    flex: 1;
+  }
+
+  .sbs .img__container {
+    display: flex;
+    justify-content: end;
+    max-height: 600px;
+    justify-content: stretch;
+    border-radius: var(--b-radius);
+  }
+
+  .sbs .img__container img {
+    object-fit: cover;
+    border: inherit;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sbs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sbs textarea {
+    flex: 1;
+  }
+
+  .details {
+    grid-area: details;
+  }
+}
