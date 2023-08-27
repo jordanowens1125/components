@@ -41,7 +41,7 @@
 
   .member__socials .img__container {
     border-radius: 50%;
-    border: 1px solid var(--secondary);
+    border: 3px solid var(--borderColor);
     height: 30px;
     width: 30px;
   }
@@ -54,8 +54,7 @@
 
   .member__socials .img__container:hover {
     cursor: pointer;
-    background-color: var(--primary);
-    border: 1px solid transparent;
+    border: 3px solid var(--primary);
   }
 }
 

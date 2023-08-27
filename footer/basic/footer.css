@@ -26,13 +26,13 @@
 
   footer .socials a {
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid var(--light-bg);
     transition: 0.5s;
   }
 
   footer .socials a:hover {
     border: 2px var(--primary) solid;
-    transform: scale(1.01);
+    transform: scale(1.2);
   }
 
   footer .socials img {

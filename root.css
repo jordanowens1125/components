@@ -3,7 +3,7 @@
   --primary: rgb(21, 182, 164);
   --borderColor: rgba(1, 25, 54, 255);
   --secondary: pink;
-  --sectionPadding: 20px ;
+
   --headingTextColor: white;
   --bodyTextColor: rgba(130, 143, 160, 255);
   --tertiary: lime;
@@ -19,7 +19,9 @@
   --p-sm: 10px;
   --p-md: 25px;
   --p-lg: 40px;
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
+  /* border radius */
   --b-radius: 4px;
 }
 
@@ -62,6 +64,8 @@ section {
 /* Text color */
 .primary {
   color: var(--primary);
+  fill: var(--primary);
+  /* filter:  brightness(0) invert(1)  saturate(3); */
 }
 
 /* Background */
@@ -119,16 +123,23 @@ textarea:focus {
 }
 /* End of inputs */
 
-
 /* img */
-img{
+img {
   border-radius: var(--b-radius);
 }
 /*  */
 
-
 /* Nav */
-header{
+header {
   color: var(--headingTextColor);
 }
 /* End of Nav */
+
+/* animations css */
+
+/* end of animations css */
+
+.cs-icon {
+    /* first make icon black then invert makes it white then add color */
+    filter: brightness(0) invert(1) opacity(0.5) drop-shadow(0 0 0 var(--primary)) saturate(1000%);
+}

@@ -1,5 +1,6 @@
 @media screen and (min-width: 0em) {
   .cta-section {
+    background-color: var(--light-bg);
   }
 
   .cta {
@@ -8,11 +9,11 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    gap: var(--p-sm);
+    gap: var(--p-md);
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .cta {
     justify-content: space-between;
   }
