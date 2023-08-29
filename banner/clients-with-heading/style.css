@@ -1,0 +1,42 @@
+@media screen and (min-width: 0) {
+  .banner-bg {
+    background-color: var(--bannerColor);
+    text-align: center;
+  }
+
+  .banner-flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--p-lg);
+  }
+
+  .banner-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--p-lg);
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .banner-clients img {
+    width: 100px;
+    object-fit: cover;
+    flex: 1;
+    max-width: 125px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+
+  .banner-clients img:hover {
+    filter: grayscale(0);
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .banner-clients {
+    justify-content: space-around;
+  }
+}
