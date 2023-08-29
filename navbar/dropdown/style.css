@@ -7,31 +7,6 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: min(100vw, 100rem);
-}
-
-header ul {
-  list-style: none;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header,
-.section {
-  padding: 20px;
-}
-
-.attribution {
-  padding: 20px 10px;
-  max-width: min(100vw, 90rem);
-}
-
-p,
-nav {
-  color: inherit;
 }
 
 /* Mobile Nav */

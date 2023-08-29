@@ -1,0 +1,52 @@
+/* * {
+  border: 1px red solid;
+} */
+
+@media screen and (min-width: 0) {
+  .wrapper {
+    position: relative;
+    padding: var(--sectionPadding);
+    height: 100vh;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--p-md);
+    margin: auto;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-sm);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-md);
+    justify-content: center;
+    max-width: 50%;
+  }
+
+  .img-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+}

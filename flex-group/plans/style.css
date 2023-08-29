@@ -63,8 +63,9 @@
     flex-direction: row;
     padding: var(--p-sm);
   }
+  
   .flex-item {
-    flex: 1 0 25%;
+    flex: 0 0 25%;
     min-width: 350px;
   }
 }

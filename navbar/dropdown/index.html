@@ -11,18 +11,18 @@
 <body>
     <header>
       <a href="./">
-        <img src="./images/logo.svg" alt="" srcset="" />
+        <img src="./images/logo.svg" alt="" srcset="" class="cs-icon"/>
       </a>
       <nav>
-        <img src="./images/icon-menu.svg" alt="" srcset="" class="mobile" onclick="showMobileNav()"/> 
+        <img src="./images/icon-menu.svg" alt="" srcset="" class="mobile white-icon" onclick="showMobileNav()"/> 
         
         <div id="nav-modal">
           <ul class="nav">
-            <img src="./images/icon-close-menu.svg" alt="" class="align-self-end mobile" onclick="hideMobileNav()">
+            <img src="./images/icon-close-menu.svg" alt="" class="align-self-end mobile white-icon" onclick="hideMobileNav()">
             <li onclick="handleNavExtension(this)">
               <span href="#">
                 Features 
-                <img src="./images/icon-arrow-down.svg" alt="">
+                <img src="./images/icon-arrow-down.svg" alt="" class="white-icon">
               </span>
               <div class="dropdown closed">
                 <ul class="icons-included">
@@ -36,7 +36,7 @@
             <li onclick="handleNavExtension(this)">
               <a href="#">
                 Company
-                <img src="./images/icon-arrow-down.svg" alt="">
+                <img src="./images/icon-arrow-down.svg" alt="" class="white-icon">
               </a>
               <div class="dropdown closed">
                 <ul>
@@ -57,6 +57,7 @@
             </div>
         </div>
       </nav>
+    </header>
 </body>
 <script src="nav.js"></script>
 </html>

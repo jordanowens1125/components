@@ -3,7 +3,7 @@
   --primary: rgb(21, 182, 164);
   --borderColor: rgba(1, 25, 54, 255);
   --secondary: pink;
-
+  --white: white;
   --headingTextColor: white;
   --bodyTextColor: rgba(130, 143, 160, 255);
   --tertiary: lime;
@@ -50,7 +50,8 @@ a {
   color: inherit;
 }
 
-.container {
+.container,
+header {
   max-width: 1120px;
   margin: auto;
   width: 100%;
@@ -126,6 +127,7 @@ textarea:focus {
 /* img */
 img {
   border-radius: var(--b-radius);
+  object-fit: contain;
 }
 /*  */
 
@@ -139,7 +141,20 @@ header {
 
 /* end of animations css */
 
+/* Change img color */
 .cs-icon {
-    /* first make icon black then invert makes it white then add color */
-    filter: brightness(0) invert(1) opacity(0.5) drop-shadow(0 0 0 var(--primary)) saturate(1000%);
+  /* first make icon black then invert makes it white then add color */
+  filter: brightness(0) invert(1) opacity(0.5) drop-shadow(0 0 0 var(--primary))
+    saturate(1000%);
+}
+
+.white-icon {
+  filter: brightness(0) invert(1) drop-shadow(0 0 0 var(--white))
+    saturate(1000%);
+}
+
+.nav-menu:hover,.nav-close-menu:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(1) opacity(0.5) drop-shadow(0 0 0 var(--primary))
+    saturate(1000%);
 }
