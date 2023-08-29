@@ -21,10 +21,6 @@
     padding-top: 0;
   }
 
-  .hero i {
-    color: var(--primary);
-  }
-
   .hero .hero-info {
     gap: var(--p-sm);
   }
