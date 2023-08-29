@@ -2,11 +2,15 @@
   border: 1px red solid;
 } */
 
+
+
 @media screen and (min-width: 0) {
   .wrapper {
     position: relative;
     padding: var(--sectionPadding);
-    height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .hero {
@@ -24,6 +28,9 @@
 }
 
 @media screen and (min-width: 1020px) {
+  .wrapper{
+    height: 100vh;
+  }
   .hero {
     display: flex;
     flex-direction: row;
