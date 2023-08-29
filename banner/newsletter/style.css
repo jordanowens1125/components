@@ -1,31 +1,30 @@
 @media screen and (min-width: 0em) {
-  .cta-section {
+  .cta-section .container {
     background-color: var(--light-bg);
+    padding: var(--sectionPadding);
   }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      gap: var(--p-md);
+      width: 70%;
+      margin: auto;
+    }
 
-  .cta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    gap: var(--p-md);
-    width: 80%;
-    margin: auto;
+    .subscribe {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      gap: var(--p-sm);
+    }
   }
-
-  .subscribe {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    gap: var(--p-sm);
-  }
-}
-
 @media screen and (min-width: 500px) {
   .cta {
     justify-content: space-between;
