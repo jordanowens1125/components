@@ -4,7 +4,7 @@
   --borderColor: rgba(1, 25, 54, 255);
   --secondary: pink;
   --white: white;
-  --headingTextColor: white;
+  --headerColor: white;
   --bodyTextColor: rgba(130, 143, 160, 255);
   --tertiary: lime;
 
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--headingTextColor);
+  color: var(--headerColor);
   font-weight: bold;
 }
 

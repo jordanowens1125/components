@@ -3,7 +3,7 @@
 } */
 
 @media screen and (min-width: 0) {
-  .wrapper {
+  .sbs-r-wrapper {
     position: relative;
     padding: var(--sectionPadding);
     height: fit-content;
@@ -13,7 +13,7 @@
     gap: var(--p-sm);
   }
 
-  .hero {
+  .sbs {
     display: flex;
     flex-direction: column-reverse;
     gap: var(--p-md);
@@ -21,7 +21,7 @@
     padding-top: 0;
   }
 
-  .hero .hero-info {
+  .sbs .sbs-info {
     gap: var(--p-sm);
   }
 
@@ -41,14 +41,14 @@
     padding: unset;
   }
 
-  .hero {
+  .sbs {
     display: flex;
     flex-direction: row;
     height: 100%;
     padding: var(--sectionPadding);
   }
 
-  .hero-info {
+  .sbs-info {
     display: flex;
     flex-direction: column;
     gap: var(--p-md);
