@@ -4,7 +4,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to left top, #031a9a, #8b53ff);
+  background: linear-gradient(to left top, var(--primary), var(--secondary));
 }
 
 @media screen and (min-width: 0) {
@@ -44,11 +44,11 @@ body {
   }
 
   .wrapper i:first-of-type {
-    left: -22px;
+    left: -20px;
   }
 
   .wrapper i:last-of-type {
-    right: -22px;
+    right: -20px;
   }
 
   .wrapper .carousel :where(.card, .img) {
@@ -73,7 +73,7 @@ body {
   }
 
   .wrapper .carousel .img {
-    background-color: #8b53ff;
+    background-color: var(--primary);
     border-radius: 50%;
     width: 148px;
     height: 148px;

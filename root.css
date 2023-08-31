@@ -1,10 +1,10 @@
 :root {
   /* Colors */
   --primary: rgb(21, 182, 164);
+  --secondary: rgba(6,98,174,255);
   --borderColor: rgba(1, 25, 54, 255);
-  --secondary: pink;
-  --white: white;
-  --headerColor: white;
+  --white: #fff;
+  --headerColor: #fff;
   --bodyTextColor: rgba(130, 143, 160, 255);
   --tertiary: lime;
 
