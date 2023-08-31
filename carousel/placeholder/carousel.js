@@ -1,5 +1,6 @@
 const carousel = document.querySelector(".carousel");
 const firstImg = carousel.querySelectorAll("img")[0];
+const lastImg = carousel.querySelectorAll("img:last-of-type")[0];
 const arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false,
@@ -8,11 +9,42 @@ let isDragStart = false,
 let firstImgWidth = firstImg.clientWidth + 14;
 let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
 
+const observerOfLastImg = new window.IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      arrowIcons[1].style.display = "none";
+      return;
+    }
+    arrowIcons[1].style.display = "block";
+  },
+  {
+    root: null,
+    threshold: 1, // set offset 1 means trigger if all of image is in viewport
+  }
+);
+
+
+// const observerOfFirstImg = new window.IntersectionObserver(
+//   ([entry]) => {
+//     if (entry.isIntersecting) {
+//       arrowIcons[0].style.display = "none";
+//       return;
+//     }
+//     arrowIcons[0].style.display = "block";
+//   },
+//   {
+//     root: null,
+//     threshold: 1, // set offset 1 means trigger if all of image is in viewport
+//   }
+// );
+
+// observerOfFirstImg.observe(firstImg);
+
 const showHideIcons = () => {
   arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
   console.log(carousel.scrollLeft, scrollWidth);
-  arrowIcons[1].style.display =
-    carousel.scrollLeft == scrollWidth ? "none" : "block";
+  // arrowIcons[1].style.display =
+  //   carousel.scrollLeft == scrollWidth ? "none" : "block";
 };
 
 arrowIcons.forEach((icon) => {
