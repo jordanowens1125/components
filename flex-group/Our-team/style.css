@@ -1,5 +1,5 @@
 @media screen and (min-width: 0) {
-  .members {
+  .group {
     display: flex;
     flex-direction: column;
     gap: var(--p-md);
@@ -7,7 +7,7 @@
     align-items: center;
   }
 
-  .member {
+  .item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -22,7 +22,7 @@
     aspect-ratio: 0.8;
   }
 
-  .member .member__info {
+  .item .member__info {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -59,14 +59,14 @@
 }
 
 @media screen and (min-width: 500px) {
-  .members {
+  .group {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: var(--p-md);
   }
-  .member{
+  .item {
     flex: 0 1 0;
     min-width: 275px;
   }

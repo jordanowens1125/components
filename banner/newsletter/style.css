@@ -1,5 +1,5 @@
 @media screen and (min-width: 0em) {
-  .cta-section .container {
+  .cta-section{
     background-color: var(--light-bg);
     padding: var(--sectionPadding);
   }

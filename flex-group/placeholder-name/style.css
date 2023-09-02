@@ -1,5 +1,5 @@
 @media screen and (min-width: 0) {
-  .blogs {
+  .group {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -7,7 +7,7 @@
     align-items: center;
   }
 
-  .blog {
+  .item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -16,14 +16,14 @@
     flex: 1;
   }
 
-  .blog__cover {
+  .item__cover {
     height: 275px;
     object-fit: cover;
     width: 100%;
     aspect-ratio: 0.8;
   }
 
-  .blog .blog__info {
+  .item .item__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -33,13 +33,13 @@
 }
 
 @media screen and (min-width: 610px) {
-  .blogs {
+  .group {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--p-md);
     justify-content: space-between;
   }
-  .blog {
+  .item {
     width: unset;
     align-self: stretch;
     /* 400 set here to temporarily fix last 
@@ -47,7 +47,7 @@
     min-width: 400px;
     flex: 1;
   }
-  .blog p {
+  .item p {
     max-width: 80%;
   }
 }

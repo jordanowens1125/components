@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width: 0) {
-  .members {
+  .group{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -11,7 +11,7 @@
     align-items: center;
   }
 
-  .member {
+  .item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -25,7 +25,7 @@
     gap: var(--p-md);
   }
 
-  .member .member__banner{
+  .item .item__banner{
     position: absolute;
     top: 0;
     left: 0;
@@ -37,14 +37,14 @@
     border-bottom: 25px solid pink; */
   }
 
-  .member__profile {
+  .item__profile {
     height: 90px;
     width: 90px;
     object-fit: cover;
     aspect-ratio: 1;
   }
 
-  .member .member__info {
+  .item .item__info {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -52,25 +52,25 @@
     gap: 10px;
   }
 
-  .member__socials {
+  .item__socials {
     display: flex;
     gap: 10px;
   }
 
-  .member__socials .img__container {
+  .item__socials .img__container {
     border-radius: 50%;
     border: 1px solid var(--secondary);
     height: 30px;
     width: 30px;
   }
 
-  .member__socials .img__container img {
+  .item__socials .img__container img {
     padding: 5px;
     height: 30px;
     width: 30px;
   }
 
-  .member__socials .img__container:hover {
+  .item__socials .img__container:hover {
     cursor: pointer;
     background-color: var(--primary);
     border: 1px solid transparent;
@@ -78,14 +78,14 @@
 }
 
 @media screen and (min-width: 505px) {
-  .members {
+  .group {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
   }
-  .member {
+  .item {
     width: unset;
   }
 }

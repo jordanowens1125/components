@@ -1,0 +1,25 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.map-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  min-height: 400px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  zoom: 0.1;
+}
+
+.dark-mode iframe{
+    filter: invert(100%);
+}

@@ -18,7 +18,7 @@
     text-align: center;
   }
 
-  .locations {
+  .group {
     display: flex;
     flex-direction: column;
     gap: var(--p-sm);
@@ -26,7 +26,7 @@
     align-items: center;
   }
 
-  .location {
+  .item {
     display: flex;
     flex-direction: column;
     flex: 25%;
@@ -35,11 +35,11 @@
     gap: var(--p-sm);
   }
 
-  .location img {
+  .item img {
     transition: 0.5s;
   }
 
-  .location img:hover {
+  .item img:hover {
     opacity: 0.95;
     cursor: pointer;
     transform: scale(1.02);
@@ -50,12 +50,12 @@
   .location-section{
     text-align: left;
   }
-  .locations {
+  .group {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
   }
-  .location {
+  .item {
     width: unset;
     /* prevents last child from filling entire row if flex wraps */
     flex: none;

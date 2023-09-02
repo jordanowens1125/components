@@ -2,16 +2,16 @@
   /* Colors */
   --primary: rgb(21, 182, 164);
   --secondary: rgba(6,98,174,255);
-  --borderColor: rgba(1, 25, 54, 255);
+  --border-clr: rgba(1, 25, 54, 255);
   --white: #fff;
-  --headerColor: #fff;
-  --bodyTextColor: rgba(130, 143, 160, 255);
+  --header-clr: #fff;
+  --body-text-clr: rgba(130, 143, 160, 255);
   --tertiary: rgb(190,205,227);
 
   /* background colors */
-  --primary-bg-color: rgba(0, 20, 45, 255);
-  --copyright-bg-color: yellow;
-  --banner-bg-color: purple;
+  --primary-bg-clr: rgba(0, 20, 45, 255);
+  --copyright-bg-clr: yellow;
+  --banner-bg-clr: purple;
   --light-bg: rgba(1, 25, 54, 255);
 
   /* padding */
@@ -26,8 +26,8 @@
 }
 
 body {
-  background-color: var(--primary-bg-color);
-  color: var(--bodyTextColor);
+  background-color: var(--primary-bg-clr);
+  color: var(--body-text-clr);
 }
 
 h1,
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--headerColor);
+  color: var(--header-clr);
   font-weight: bold;
 }
 
@@ -91,12 +91,12 @@ button:hover,
 
 .btn-primary {
   background-color: var(--primary);
-  color: var(--headingTextColor);
+  color: var(--header-clr);
 }
 
 .btn-tp {
   border: 1px solid var(--primary);
-  color: var(--headingTextColor);
+  color: var(--header-clr);
 }
 
 /* End of button */
@@ -114,7 +114,7 @@ textarea {
   outline: none;
   padding: var(--p-sm);
   border-radius: var(--b-radius);
-  border: 1px solid var(--borderColor);
+  border: 1px solid var(--border-clr);
 }
 
 input:focus,
@@ -129,6 +129,7 @@ img {
   border-radius: var(--b-radius);
   object-fit: contain;
   width: 100%;
+  height: 100%;
 }
 
 .img-container{
@@ -139,7 +140,7 @@ img {
 
 /* Nav */
 header {
-  color: var(--headingTextColor);
+  color: var(--header-clr);
 }
 /* End of Nav */
 
