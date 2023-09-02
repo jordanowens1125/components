@@ -1,0 +1,38 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.about.container {
+  display: grid;
+  gap: var(--p-md);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about.container .content h4 {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.about.container .content h4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 2rem;
+  height: 100%;
+  width: 1rem;
+  background-color: var(--primary);
+}
+
+
+
+.about.container .img-container img{
+  margin: auto;
+  outline: 2px solid var(--primary);
+  max-width: 400px;
+  outline-offset: 1rem;
+
+}

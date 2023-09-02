@@ -128,7 +128,13 @@ textarea:focus {
 img {
   border-radius: var(--b-radius);
   object-fit: contain;
+  width: 100%;
 }
+
+.img-container{
+  border-radius: var(--b-radius);
+}
+
 /*  */
 
 /* Nav */
