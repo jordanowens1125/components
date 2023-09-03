@@ -1,0 +1,9 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.split {
+  background: linear-gradient(to left, 
+  var(--primary) 50%, 
+  var(--tertiary) 50%);
+}

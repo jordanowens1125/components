@@ -2,8 +2,9 @@
   /* Colors */
   --primary: rgb(21, 182, 164);
   --secondary: rgba(6,98,174,255);
-  --border-clr: rgba(1, 25, 54, 255);
+  --border-clr: rgba(5, 252, 223, 0.11);
   --white: #fff;
+  --black: #161313;
   --header-clr: #fff;
   --body-text-clr: rgba(130, 143, 160, 255);
   --tertiary: rgb(190,205,227);
