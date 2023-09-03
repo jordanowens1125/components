@@ -26,6 +26,10 @@
   --b-radius: 4px;
 }
 
+*{
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: var(--primary-bg-clr);
   color: var(--body-text-clr);
