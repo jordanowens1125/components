@@ -1,0 +1,14 @@
+* {
+  border: 1px red solid;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box{
+  width: 100px;
+  height: 500px;
+}

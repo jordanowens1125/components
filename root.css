@@ -17,13 +17,21 @@
 
   /* padding */
   --p-xs: 5px;
-  --p-sm: 10px;
+  /* small */
+  --p-s:10px;
+  /* smedium */
+  --p-sm: 16px;
   --p-md: 25px;
+  /* medium large */
+  --p-ml: 35px;
   --p-lg: 40px;
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
   /* border radius */
   --b-radius: 4px;
+
+
+  --maxContainerWidth: 1440px;
 }
 
 *{
@@ -57,7 +65,7 @@ a {
 
 .container,
 header {
-  max-width: 1120px;
+  max-width: var(--maxContainerWidth);
   margin: auto;
   width: 100%;
 }
@@ -109,17 +117,18 @@ button:hover,
 /* inputs */
 
 textarea {
-  resize: none;
   border-radius: var(--b-radius);
+  resize: vertical;
 }
 
 input,
 select,
 textarea {
   outline: none;
-  padding: var(--p-sm);
+  padding: var(--p-s);
   border-radius: var(--b-radius);
   border: 1px solid var(--border-clr);
+  width: 100%;
 }
 
 input:focus,
@@ -186,3 +195,20 @@ header {
 }
 /*  */
 
+
+/* font classes */
+.main-title{
+
+}
+.section-title{
+
+}
+.sub-title{
+
+}
+.item-heading{
+
+}
+.banner-text{
+  
+}

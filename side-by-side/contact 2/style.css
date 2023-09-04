@@ -1,0 +1,74 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.sbs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form.left {
+  display: grid;
+  gap: var(--p-sm);
+  padding: var(--p-sm);
+  text-align: center;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-sm);
+}
+
+form.left input::placeholder,
+form.left textarea::placeholder {
+  color: var(--black);
+}
+
+form.left button {
+  width: 100%;
+}
+
+.right {
+  padding: var(--p-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-md);
+  text-align: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+  .sbs-container {
+    display: grid;
+    grid-template-columns: 2.25fr 1fr;
+  }
+  .right {
+    padding: var(--p-md);
+  }
+  .form-grid {
+    display: grid;
+    grid-template-areas:
+      "name name name number number number"
+      "people people date date hour hour"
+      "message message message message message message";
+  }
+  .name {
+    grid-area: name;
+  }
+  .number {
+    grid-area: number;
+  }
+  .people {
+    grid-area: people;
+  }
+  .date {
+    grid-area: date;
+  }
+  .hour {
+    grid-area: hour;
+  }
+  .message {
+    grid-area: message;
+  }
+}
