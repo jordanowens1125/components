@@ -1,0 +1,23 @@
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+.banner-bg {
+  background-color: white;
+}
+
+.slider {
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+  animation: 6s slide infinite linear;
+}
+
+.slider img {
+  height: 50px;
+  margin: 0 40px;
+}
