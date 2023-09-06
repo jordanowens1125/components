@@ -1,0 +1,104 @@
+/* * {
+  border: 1px red solid;
+} */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to left top, var(--tertiary), var(--primary));
+}
+
+.tab-container {
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-heading {
+  margin-bottom: var(--p-sm);
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  margin: auto;
+  padding: 0;
+  gap: var(--p-sm);
+}
+
+.tab {
+  cursor: pointer;
+  color: var(--primary);
+  z-index: 1;
+  padding: var(--p-s);
+}
+
+.tab i {
+  padding-right: var(--p-s);
+}
+
+.tab label {
+  transition: 0.3 all ease;
+}
+
+.tabs .slider {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background-color: var(--primary);
+  left: 0;
+  bottom: 0;
+  border-radius: var(--b-radius);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+#home:checked ~ .tabs label[for="home"],
+#blog:checked ~ .tabs label[for="blog"],
+#code:checked ~ .tabs label[for="code"],
+#help:checked ~ .tabs label[for="help"],
+#about:checked ~ .tabs label[for="about"] {
+  color: #fff;
+}
+
+#blog:checked ~ .tabs .slider {
+  left: 20%;
+}
+
+#code:checked ~ .tabs .slider {
+  left: 40%;
+}
+
+#help:checked ~ .tabs .slider {
+  left: 60%;
+}
+
+#about:checked ~ .tabs .slider {
+  left: 80%;
+}
+
+#home:checked ~ .tab-content .home-content,#blog:checked ~ .tab-content .blog-content
+,#code:checked ~ .tab-content .code-content
+,#help:checked ~ .tab-content .help-content
+,#about:checked ~ .tab-content .about-content {
+  display: block;
+}
+
+.tab-content {
+  text-align: left;
+}
+
+.content{
+  display: none;
+  transition: .3s ease ;
+}
+
+.tab-content h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}

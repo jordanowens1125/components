@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../root.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container tab-container">
+      <h2 class="section-heading">Tab Heading</h2>
+      <input type="radio" name="slider" id="home" checked />
+      <input type="radio" name="slider" id="blog" />
+      <input type="radio" name="slider" id="code" />
+      <input type="radio" name="slider" id="help" />
+      <input type="radio" name="slider" id="about" />
+      <ul class="tabs">
+        <li class="tab">
+          <label for="home"><i class="fa-solid fa-house"></i> Home</label>
+        </li>
+        <li class="tab">
+          <label for="blog"><i class="fa-solid fa-blog"></i>Blog</label>
+        </li>
+        <li class="tab">
+          <label for="code"><i class="fa-solid fa-code"></i>Code</label>
+        </li>
+        <li class="tab">
+          <label for="help"><i class="fa-solid fa-envelope"></i>Help</label>
+        </li>
+        <li class="tab">
+          <label for="about"><i class="fa-regular fa-user"></i>About</label>
+        </li>
+        <div class="slider"></div>
+      </ul>
+
+      <div class="tab-content">
+        <div class="home-content content">
+          <h3>Home Content</h3>
+          <p>Content 1</p>
+        </div>
+
+        <div class="content blog-content">
+          <h3>Blog Content</h3>
+          <p>Content 2</p>
+        </div>
+
+        <div class="content code-content">
+          <h3>Code Content</h3>
+          <p>Content 3</p>
+        </div>
+
+        <div class="content help-content">
+          <h3>Help Content</h3>
+          <p>Content 4</p>
+        </div>
+
+        <div class="content about-content">
+          <h3>About Content</h3>
+          <p>Content 5</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
