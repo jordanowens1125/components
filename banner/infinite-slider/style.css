@@ -1,20 +1,24 @@
-@keyframes slide{
-  from{
+@keyframes slide {
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
 .banner-bg {
   background-color: white;
+  /* overflow: hidden; */
+  gap: var(--p-md);
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .slider {
-  white-space: nowrap;
-  display: flex;
-  overflow: hidden;
-  animation: 6s slide infinite linear;
+  display:flex;
+
+  animation: 5s slide infinite linear;
 }
 
 .slider img {
