@@ -1,0 +1,42 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.home {
+  width: 100%;
+  display: flex;
+  min-height: 640px;
+  align-items: center;
+  background: url("images/Background-home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.home-text {
+  padding-left: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-md);
+}
+
+.home-text h1 {
+  font-size: 2.4rem;
+}
+
+.home-text span {
+  color: var(--primary);
+}
+
+.home-text p {
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.btn {
+  padding: 10px 22px;
+  background-color: var(--primary);
+  color: #fff;
+  width: fit-content;
+}
