@@ -1,0 +1,76 @@
+/* * {
+  border: 1px red solid;
+} */
+
+@media screen and (min-width: 0) {
+}
+
+#bars-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--p-sm);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-s);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--bar-width) + 2.5%);
+  position: relative;
+}
+
+.info span.tooltip {
+  padding: 2px var(--p-s);
+  background: linear-gradient(to left, var(--secondary), var(--primary));
+  color: #fff;
+  border-radius: var(--b-radius);
+  font-size: 0.75rem;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to left top, var(--secondary), var(--primary));
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.skill-bar {
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 8px;
+  border-radius: var(--b-radius);
+}
+
+.skill-per {
+  position: absolute;
+  width: var(--bar-width);
+  background: linear-gradient(to left, var(--secondary), var(--primary));
+  height: 100%;
+  border-radius: inherit;
+  animation: progress .8s ease-in-out forwards;
+}
+
+@keyframes progress{
+  0%{
+    width: 0;
+    opacity: 0;
+  }
+}
