@@ -22,7 +22,7 @@
 .info {
   display: flex;
   justify-content: space-between;
-  width: calc(var(--bar-width) + 2.5%);
+  width: calc(var(--bar-width) + 6%);
   position: relative;
 }
 
@@ -74,3 +74,17 @@
     opacity: 0;
   }
 }
+
+/* @media screen and (min-width: 375px) {
+  .info{
+    width: calc(var(--bar-width) + 4.5vw);
+  }
+} */
+
+@media screen and (min-width: 515px) {
+  .info{
+    width: calc(var(--bar-width) + 3%);
+  }
+}
+
+/* Needs to be fixed to be mobile friendly */
