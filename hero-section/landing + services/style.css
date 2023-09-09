@@ -80,10 +80,10 @@ i.right {
 }
 
 .item i{
-  font-size: 28px;
+  font-size: 2.25rem;
   background-color: var(--primary);
   border-radius: 50%;
-  padding: 20px;
+  padding: var(--p-md);
   color: #fff;
   margin-bottom: var(--p-s);
 }
