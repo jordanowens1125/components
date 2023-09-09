@@ -1,0 +1,40 @@
+* {
+  border: 1px red solid;
+}
+
+.container {
+  display: flex;
+  gap: var(--p-md);
+  justify-content: space-between;
+}
+
+.circle-wrap {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #fff;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask{
+  clip: rect(0px, 15px, 150px, 75px);
+}
+
+.mask .fill-1{
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: var(--primary);
+}
+
+.mask.full-1, .circle .fill-1{
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(135deg);
+}

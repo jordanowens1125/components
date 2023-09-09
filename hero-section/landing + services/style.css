@@ -1,0 +1,111 @@
+/* * {
+  border: 1px red solid;
+} */
+
+@media screen and (min-width: 0) {
+}
+
+#hero {
+  padding: 0;
+}
+
+.top {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top i {
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  display: none;
+}
+
+i.left {
+  left: 20px;
+}
+
+i.right {
+  right: 20px;
+}
+
+.top i:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.top .container {
+  width: 50%;
+}
+
+.bottom {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.bottom .container {
+  background-color: #fff;
+  color: var(--secondary);
+  flex: 1;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--p-md);
+  border-radius: var(--b-radius);
+  border-top: var(--primary) 5px solid;
+  padding: var(--p-md);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--p-sm);
+  padding: var(--p-s);
+}
+
+.item i{
+  font-size: 28px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 20px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .top i {
+    display: block;
+  }
+  .group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom {
+    max-width: var(--maxContainerWidth);
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
