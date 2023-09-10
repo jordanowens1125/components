@@ -1,6 +1,4 @@
-/* * {
-  border: 1px red solid;
-} */
+
 
 @media screen and (min-width: 0) {
 }
@@ -22,12 +20,11 @@
 .info {
   display: flex;
   justify-content: space-between;
-  width: calc(var(--bar-width) + 6%);
   position: relative;
 }
 
 .info span.tooltip {
-  padding: 2px var(--p-s);
+  padding: 4px var(--p-s);
   background: linear-gradient(to left, var(--secondary), var(--primary));
   color: #fff;
   border-radius: var(--b-radius);
@@ -36,20 +33,9 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  position: relative;
   z-index: 1;
 }
 
-.tooltip::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to left top, var(--secondary), var(--primary));
-  width: 10px;
-  height: 10px;
-  bottom: -4px;
-  transform: rotate(45deg);
-  z-index: -1;
-}
 
 .skill-bar {
   position: relative;
@@ -80,11 +66,5 @@
     width: calc(var(--bar-width) + 4.5vw);
   }
 } */
-
-@media screen and (min-width: 515px) {
-  .info{
-    width: calc(var(--bar-width) + 3%);
-  }
-}
 
 /* Needs to be fixed to be mobile friendly */
