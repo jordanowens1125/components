@@ -1,0 +1,37 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.container {
+  display: flex;
+  gap: var(--p-md);
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  transition: 0.3s ease-in-out;
+  transform-origin: left bottom;
+  position: relative;
+  padding: var(--p-s);
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  background-color: var(--primary);
+  height: 3px;
+  left: 0;
+  right: 0;
+  transition: .2s ease-in-out;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:hover:after {
+  width: 100%;
+}
