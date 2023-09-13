@@ -11,20 +11,20 @@
 
   /* background colors */
   --primary-bg-clr: rgba(0, 20, 45, 255);
-  --copyright-bg-clr: yellow;
-  --banner-bg-clr: purple;
   --light-bg: rgba(1, 25, 54, 255);
 
+  --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+
   /* padding */
-  --p-xs: 5px;
+  --p-xs: 0.25rem;
   /* small */
-  --p-s: 10px;
+  --p-s: 0.5rem;
   /* smedium */
-  --p-sm: 16px;
-  --p-md: 25px;
+  --p-sm: 1rem;
+  --p-md: 1.5rem;
   /* medium large */
-  --p-ml: 35px;
-  --p-lg: 40px;
+  --p-ml: 2rem;
+  --p-lg: 2.5rem;
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
   /* border radius */
@@ -158,10 +158,8 @@ input,
 select,
 textarea {
   outline: none;
-  padding: var(--p-s);
   border-radius: var(--b-radius);
   border: 1px solid var(--border-clr);
-  width: 100%;
 }
 
 input:focus,
