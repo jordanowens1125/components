@@ -1,0 +1,38 @@
+/* * {
+  border: 1px red solid;
+} */
+
+.accordion label {
+  display: block;
+  padding: var(--p-sm);
+  color: var(--tertiary);
+  cursor: pointer;
+}
+
+.accordion label:hover {
+  color: var(--primary);
+  filter: saturate(0.85);
+}
+
+.accordion .accordion-content {
+  transition: 0.8s;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  margin-left: var(--p-sm);
+  margin-top: var(--p-sm);
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.accordion [id^="accordion"]:checked ~ div[id^="accordion-content"] {
+  display: block;
+  max-height: 300px;
+}
+
+.accordion [id^="accordion"]:checked + label {
+  color: var(--primary);
+  filter: saturate(1);
+}
