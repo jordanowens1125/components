@@ -2,6 +2,10 @@
   border: 1px red solid;
 } */
 
+.accordion{
+  padding: var(--p-sm);
+}
+
 .accordion label {
   display: block;
   padding: var(--p-sm);
