@@ -75,6 +75,12 @@ section {
   margin: auto;
 }
 
+.group{
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-s);
+}
+
 /* Text color */
 .primary {
   color: var(--primary);
