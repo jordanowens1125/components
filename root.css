@@ -75,10 +75,27 @@ section {
   margin: auto;
 }
 
-.group{
+.content {
   display: flex;
   flex-direction: column;
-  gap: var(--p-s);
+  gap: var(--p-md);
+}
+
+.content .section-heading,
+.content .heading,
+.content .sub-heading {
+  margin: 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-sm);
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-sm);
 }
 
 /* Text color */
