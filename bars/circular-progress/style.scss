@@ -7,16 +7,18 @@
   justify-content: center;
 }
 
+
 @media screen and (min-width: 768px) {
   .group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 1024px) {
   .group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--p-md);
   }
-}/*# sourceMappingURL=style.css.map */
+}
