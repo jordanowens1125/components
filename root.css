@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --primary: rgb(21, 182, 164);
+  --primary-rgb: 21, 182, 164;
   --secondary: rgba(6, 98, 174, 255);
   --border-clr: rgba(5, 252, 223, 0.11);
   --white: #fff;
@@ -9,10 +10,10 @@
   --body-text-clr: rgba(130, 143, 160, 255);
   --tertiary: rgb(190, 205, 227);
 
-  --borderColor: rgba(130, 143, 160, 255);
+  --borderColor: rgb(213, 220, 232);
 
   /* background colors */
-  --primary-bg-clr: rgba(0, 20, 45, 255);
+  --primary-bg-clr: #fff;
   --light-bg: rgba(1, 25, 54, 255);
 
   --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
@@ -22,12 +23,12 @@
   /* small */
   --p-s: 0.5rem;
   /* smedium */
-  --p-sm: 1rem;
+  --p-sm: 0.75rem;
   --p-md: 1.5rem;
   /* medium large */
   --p-ml: 2rem;
   --p-lg: 2.5rem;
-  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  --sectionPadding: clamp(2.75rem, 5.82vw, 6.25rem) 0.75rem;
 
   /* border radius */
   --b-radius: 4px;
@@ -42,16 +43,6 @@
 body {
   background-color: var(--primary-bg-clr);
   color: var(--body-text-clr);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* color: var(--header-clr); */
-  font-weight: bold;
 }
 
 /* root info */
@@ -120,7 +111,7 @@ button,
   border: none;
   background-color: transparent;
   border-radius: var(--b-radius);
-  padding: var(--p-sm);
+  padding: var(--p-s) var(--p-sm);
 }
 
 a:hover,
@@ -141,6 +132,24 @@ button:hover,
 /* End of button */
 
 /* Text styles */
+/* font classes */
+.main-h {
+}
+.heading {
+  margin-bottom: var(--p-sm);
+  font-size: clamp(2.5rem, 3vw, 3.75rem);
+  text-transform: capitalize;
+}
+.sub-h {
+  margin-bottom: var(--p-sm);
+}
+.item-h {
+  font-weight: bold;
+}
+.item-sub-h {
+}
+.banner-text {
+}
 .section-heading {
   font-size: 1.75rem;
   color: var(--header-clr);
@@ -208,8 +217,13 @@ img {
   /* border-radius: var(--b-radius); */
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
+.img-overlay {
+  height: 100%;
+  width: 100%;
+}
 /*  */
 
 /* Nav */
@@ -239,30 +253,4 @@ header {
   cursor: pointer;
   filter: brightness(0) invert(1) opacity(0.5) drop-shadow(0 0 0 var(--primary))
     saturate(1000%);
-}
-
-/* flex  */
-.col {
-  display: flex;
-  flex-direction: column;
-  gap: var(--p-md);
-}
-
-.row {
-  display: flex;
-  gap: var(--p-sm);
-  align-items: center;
-}
-/*  */
-
-/* font classes */
-.main-title {
-}
-.section-title {
-}
-.sub-title {
-}
-.item-heading {
-}
-.banner-text {
 }

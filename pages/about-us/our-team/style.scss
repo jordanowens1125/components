@@ -1,0 +1,129 @@
+body {
+  background-color: var(--white);
+  --temp-border-radius: 25% 0 25% 0;
+}
+
+.our-team {
+  text-align: center;
+  .item {
+    gap: var(--p-s);
+    align-items: center;
+    justify-content: center;
+  }
+  .item-h {
+    color: var(--primary);
+  }
+  .img-container {
+    border-radius: var(--temp-border-radius);
+  }
+}
+@media screen and (min-width: 400px) {
+  .our-team {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--p-md);
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .our-team {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: left;
+      gap: var(--p-lg);
+      .item {
+        .item-h,
+        .item-sub-h {
+          align-self: flex-start;
+          padding-left: var(--p-xs);
+        }
+      }
+    }
+  }
+}
+
+.our-principles {
+  text-align: center;
+  .group {
+    text-align: left;
+    .item {
+      padding-bottom: var(--p-lg);
+      border-bottom: var(--borderColor) 1px solid;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    i {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .our-principles {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--p-lg);
+      padding: var(--p-md);
+      border-bottom: 2px solid var(--borderColor);
+      .item {
+        border-bottom: none;
+        gap: var(--p-md);
+      }
+    }
+  }
+}
+
+.join {
+  .content {
+    justify-content: center;
+  }
+  .content-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-sm);
+  }
+  .item {
+    flex-direction: row;
+    gap: var(--p-md);
+    align-items: center;
+    i{
+      color: var(--secondary);
+    }
+  }
+  .img-container {
+    border-radius: var(--temp-border-radius);
+    img {
+      object-fit: cover;
+    }
+  }
+  button {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: var(--p-s);
+    align-items: center;
+    color: var(--primary-bg-clr);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .3s;
+  }
+  button:hover {
+    color: var(--primary);
+    background-color: var(--primary-bg-clr);
+    border: 2px var(--primary) solid;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .join {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
