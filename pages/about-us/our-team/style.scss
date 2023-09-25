@@ -15,6 +15,11 @@ body {
   }
   .img-container {
     border-radius: var(--temp-border-radius);
+    aspect-ratio: 1;
+    img {
+      border-radius: var(--temp-border-radius);
+      aspect-ratio: 1;
+    }
   }
 }
 @media screen and (min-width: 400px) {
@@ -89,16 +94,16 @@ body {
   }
   .item {
     flex-direction: row;
-    gap: var(--p-md);
-    align-items: center;
-    i{
+    i {
       color: var(--secondary);
     }
   }
   .img-container {
     border-radius: var(--temp-border-radius);
+    aspect-ratio: 1;
     img {
       object-fit: cover;
+      aspect-ratio: 1;
     }
   }
   button {
@@ -110,7 +115,7 @@ body {
     color: var(--primary-bg-clr);
     cursor: pointer;
     border: 2px solid transparent;
-    transition: .3s;
+    transition: 0.3s;
   }
   button:hover {
     color: var(--primary);

@@ -1,0 +1,38 @@
+// * {
+//   border: 1px red solid;
+// }
+
+.timeline {
+  text-align: center;
+  .group {
+    .item {
+      align-items: center;
+      justify-content: center;
+      padding: var(--p-md);
+      border: 2px solid var(--borderColor);
+      border-radius: var(--b-radius);
+      i {
+        font-size: 1.75rem;
+        color: var(--primary);
+      }
+    }
+    .item:nth-child(even) {
+      background-color: var(--borderColor);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .timeline {
+    .group {
+      // display: grid;
+      // grid-template-columns: repeat(2,1fr);
+      .item {
+        gap: var(--p-lg);
+        display: grid;
+        grid-template-columns: 20px 100px 1fr;
+        text-align: left;
+      }
+    }
+  }
+}

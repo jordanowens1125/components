@@ -16,6 +16,11 @@ body {
 }
 .our-team .img-container {
   border-radius: var(--temp-border-radius);
+  aspect-ratio: 1;
+}
+.our-team .img-container img {
+  border-radius: var(--temp-border-radius);
+  aspect-ratio: 1;
 }
 
 @media screen and (min-width: 400px) {
@@ -79,17 +84,17 @@ body {
 }
 .join .item {
   flex-direction: row;
-  gap: var(--p-md);
-  align-items: center;
 }
 .join .item i {
   color: var(--secondary);
 }
 .join .img-container {
   border-radius: var(--temp-border-radius);
+  aspect-ratio: 1;
 }
 .join .img-container img {
   object-fit: cover;
+  aspect-ratio: 1;
 }
 .join button {
   border-radius: 25px;
