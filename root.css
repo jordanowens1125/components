@@ -28,7 +28,7 @@
   /* medium large */
   --p-ml: 2rem;
   --p-lg: 2.5rem;
-  --sectionPadding: clamp(2.75rem, 5.82vw, 6.25rem) 0.75rem;
+  --sectionPadding: clamp(2.75rem, 5.82vh, 6.25rem) 0.75rem;
 
   /* border radius */
   --b-radius: 4px;
@@ -91,6 +91,15 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--p-sm);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-s);
+}
+.content-group{
+  display: flex;
+  gap: var(--p-s);
 }
 
 /* Text color */

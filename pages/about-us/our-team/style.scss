@@ -15,10 +15,8 @@ body {
   }
   .img-container {
     border-radius: var(--temp-border-radius);
-    aspect-ratio: 1;
     img {
       border-radius: var(--temp-border-radius);
-      aspect-ratio: 1;
     }
   }
 }

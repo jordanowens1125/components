@@ -16,11 +16,9 @@ body {
 }
 .our-team .img-container {
   border-radius: var(--temp-border-radius);
-  aspect-ratio: 1;
 }
 .our-team .img-container img {
   border-radius: var(--temp-border-radius);
-  aspect-ratio: 1;
 }
 
 @media screen and (min-width: 400px) {
