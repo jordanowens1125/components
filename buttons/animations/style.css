@@ -1,6 +1,8 @@
 .group {
+  align-items: center;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 button {
@@ -81,4 +83,23 @@ button::after {
 .btn-4:hover::after {
   height: 500%;
   width: 400%;
+}
+
+@media screen and (min-width: 500px) {
+  .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .group {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
