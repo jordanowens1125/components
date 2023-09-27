@@ -1,0 +1,159 @@
+// * {
+//   border: 1px red solid;
+// }
+
+input[type="radio"] {
+  display: none;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+  margin: auto;
+  padding: 0;
+  gap: var(--p-sm);
+}
+
+.tab {
+  color: var(--primary);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+}
+
+.tab label {
+  transition: 0.3 all ease;
+  height: 100%;
+  width: 100%;
+  background-color: var(--borderColor);
+  cursor: pointer;
+}
+#all:checked ~ .tabs label[for="all"],
+#home:checked ~ .tabs label[for="home"],
+#blog:checked ~ .tabs label[for="blog"],
+#code:checked ~ .tabs label[for="code"],
+#help:checked ~ .tabs label[for="help"],
+#about:checked ~ .tabs label[for="about"] {
+  color: var(--primary-bg-clr);
+  background-color: var(--primary);
+}
+
+.group {
+  .code,
+  .blog,
+  .code,
+  .help,
+  .about {
+    transition: 0.3s;
+  }
+}
+
+#home:checked ~ .group {
+  .home {
+    display: block;
+  }
+  .code,
+  .blog,
+  .code,
+  .help,
+  .about {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+#code:checked ~ .group {
+  .code {
+    display: block;
+  }
+  .home,
+  .blog,
+  .help,
+  .about {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+#blog:checked ~ .group {
+  .blog {
+    display: block;
+  }
+  .code,
+  .home,
+  .help,
+  .about {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+#blog:checked ~ .group {
+  .blog {
+    display: block;
+  }
+  .code,
+  .home,
+  .help,
+  .about {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+#help:checked ~ .group {
+  .help {
+    display: block;
+  }
+  .code,
+  .home,
+  .blog,
+  .about {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+#about:checked ~ .group {
+  .about {
+    display: block;
+  }
+  .code,
+  .home,
+  .blog,
+  .help {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .projects {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
