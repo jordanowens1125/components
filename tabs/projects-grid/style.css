@@ -1,126 +1,124 @@
-input[type=radio] {
+.projects {
+  text-align: center;
+}
+.projects input[type=radio] {
   display: none;
 }
-
-.tabs {
+.projects .tabs {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
   margin: auto;
-  padding: 0;
+  padding-bottom: var(--p-lg);
   gap: var(--p-sm);
 }
-
-.tab {
+.projects .tab {
   color: var(--primary);
   z-index: 1;
   text-align: center;
   display: flex;
 }
-
-.tab label {
+.projects .tab label {
   transition: 0.3 all ease;
   height: 100%;
   width: 100%;
   background-color: var(--borderColor);
   cursor: pointer;
+  padding: var(--p-sm) var(--p-md);
+  border-radius: 45px;
+  text-transform: uppercase;
+  font-size: clamp(0.9rem, 0.95vw, 1.75rem);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#all:checked ~ .tabs label[for=all],
-#home:checked ~ .tabs label[for=home],
-#blog:checked ~ .tabs label[for=blog],
-#code:checked ~ .tabs label[for=code],
-#help:checked ~ .tabs label[for=help],
-#about:checked ~ .tabs label[for=about] {
+.projects #all:checked ~ .tabs label[for=all],
+.projects #home:checked ~ .tabs label[for=home],
+.projects #blog:checked ~ .tabs label[for=blog],
+.projects #code:checked ~ .tabs label[for=code],
+.projects #help:checked ~ .tabs label[for=help],
+.projects #about:checked ~ .tabs label[for=about] {
   color: var(--primary-bg-clr);
   background-color: var(--primary);
 }
-
-.group .code,
-.group .blog,
-.group .code,
-.group .help,
-.group .about {
+.projects .group {
+  position: relative;
+}
+.projects .group .home,
+.projects .group .code,
+.projects .group .blog,
+.projects .group .code,
+.projects .group .help,
+.projects .group .about {
+  transition: 0.6s;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.projects #home:checked ~ .group .home {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #code:checked ~ .group .code {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #blog:checked ~ .group .blog {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #blog:checked ~ .group .blog {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #help:checked ~ .group .help {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #about:checked ~ .group .about {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects #all:checked ~ .group .item {
+  height: 100%;
+  width: 100%;
+  position: static;
+  z-index: 1;
+}
+.projects .img-overlay {
+  padding: var(--p-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  color: var(--white);
+  gap: var(--p-sm);
+  text-align: left;
+  transform: scale(0);
   transition: 0.3s;
 }
-
-#home:checked ~ .group .home {
-  display: block;
+.projects .img-overlay .item-h {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
 }
-#home:checked ~ .group .code,
-#home:checked ~ .group .blog,
-#home:checked ~ .group .code,
-#home:checked ~ .group .help,
-#home:checked ~ .group .about {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
+.projects .item img {
+  object-fit: cover;
+  aspect-ratio: 0.9;
 }
-
-#code:checked ~ .group .code {
-  display: block;
-}
-#code:checked ~ .group .home,
-#code:checked ~ .group .blog,
-#code:checked ~ .group .help,
-#code:checked ~ .group .about {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
-#blog:checked ~ .group .blog {
-  display: block;
-}
-#blog:checked ~ .group .code,
-#blog:checked ~ .group .home,
-#blog:checked ~ .group .help,
-#blog:checked ~ .group .about {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
-#blog:checked ~ .group .blog {
-  display: block;
-}
-#blog:checked ~ .group .code,
-#blog:checked ~ .group .home,
-#blog:checked ~ .group .help,
-#blog:checked ~ .group .about {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
-#help:checked ~ .group .help {
-  display: block;
-}
-#help:checked ~ .group .code,
-#help:checked ~ .group .home,
-#help:checked ~ .group .blog,
-#help:checked ~ .group .about {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
-#about:checked ~ .group .about {
-  display: block;
-}
-#about:checked ~ .group .code,
-#about:checked ~ .group .home,
-#about:checked ~ .group .blog,
-#about:checked ~ .group .help {
-  display: none;
-  height: 0;
-  width: 0;
-  opacity: 0;
+.projects .img-container:hover .img-overlay {
+  transform: scale(1);
 }
 
 @media screen and (min-width: 400px) {
@@ -128,10 +126,18 @@ input[type=radio] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .projects .tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 768px) {
   .projects .group {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 900px) {
+  .projects .tabs {
+    grid-template-columns: repeat(6, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
