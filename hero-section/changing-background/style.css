@@ -1,0 +1,122 @@
+#hero {
+  min-height: 100vh;
+}
+#hero .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .img-container img {
+  object-fit: cover;
+}
+#hero input[type=radio] {
+  display: none;
+}
+#hero .tabs {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  padding-bottom: var(--p-sm);
+  gap: var(--p-sm);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  bottom: 0;
+  z-index: 100;
+  margin-right: 0;
+  left: 50%;
+  right: 50%;
+}
+#hero .tab {
+  color: var(--primary);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+}
+#hero .tab label {
+  transition: 0.3 all ease;
+  height: 100%;
+  width: 100%;
+  background-color: var(--borderColor);
+  cursor: pointer;
+  padding: var(--p-s);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+#hero .tab label:hover {
+  border: 2px solid var(--primary);
+}
+#hero #one:checked ~ .tabs label[for=one],
+#hero #two:checked ~ .tabs label[for=two],
+#hero #three:checked ~ .tabs label[for=three] {
+  color: var(--primary-bg-clr);
+  background-color: var(--primary);
+}
+#hero .group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#hero .group .one,
+#hero .group .two,
+#hero .group .three {
+  transition: 0.6s;
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+#hero #one:checked ~ .group .one {
+  opacity: 1;
+  display: block;
+}
+#hero #three:checked ~ .group .three {
+  opacity: 1;
+  display: block;
+}
+#hero #two:checked ~ .group .two {
+  opacity: 1;
+  display: block;
+}
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: var(--white);
+  gap: var(--p-sm);
+  text-align: left;
+  transition: 0.3s;
+  background-color: pink;
+  padding: var(--p-sm);
+  height: 100%;
+  z-index: 5;
+}
+#hero .container .item-h {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+#hero .item {
+  width: 100%;
+  height: 100%;
+}
+#hero .item img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #hero .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--p-lg);
+  }
+}/*# sourceMappingURL=style.css.map */
