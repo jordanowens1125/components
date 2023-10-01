@@ -1,13 +1,17 @@
 :root {
   /* Colors */
   --primary: rgb(21, 182, 164);
+  --primary-dark: rgb(19, 134, 121);
+  --primary-light: rgb(197, 253, 247);
   --primary-rgb: 21, 182, 164;
   --secondary: rgba(6, 98, 174, 255);
+  --secondary-light: rgba(6, 98, 174, 255);
+  --secondary-dark: rgba(6, 98, 174, 255);
+
   --border-clr: rgba(5, 252, 223, 0.11);
   --white: #fff;
   --black: #161313;
   --header-clr: #fff;
-  --body-text-clr: rgba(130, 143, 160, 255);
   --tertiary: rgb(190, 205, 227);
 
   --borderColor: rgb(213, 220, 232);
@@ -16,23 +20,24 @@
   --primary-bg-clr: #fff;
   --light-bg: rgba(1, 25, 54, 255);
 
-  --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
-
   /* padding */
   --p-xs: 0.25rem;
-  /* small */
   --p-s: 0.5rem;
-  /* smedium */
   --p-sm: 0.75rem;
   --p-md: 1.5rem;
-  /* medium large */
   --p-ml: 2rem;
   --p-lg: 2.5rem;
   --sectionPadding: clamp(2.75rem, 5.82vh, 6.25rem) 0.75rem;
 
+  /* font colors */
+  --body-text-clr: rgba(130, 143, 160, 255);
+  --text-light: pink;
+  --text-dark: purple;
+  --text-x-light: rgb(255, 226, 230);
+
   /* border radius */
   --b-radius: 4px;
-
+  --box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   --maxContainerWidth: 80rem;
 }
 
@@ -143,22 +148,41 @@ button:hover,
 /* Text styles */
 /* font classes */
 .main-h {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
 }
 .heading {
-  margin-bottom: var(--p-sm);
+  margin-bottom: 1rem;
   font-size: clamp(2.5rem, 3vw, 3.75rem);
-  text-transform: capitalize;
+  text-transform: capitalize;font-size: 1.75rem;
+  color: var(--header-clr);
+  letter-spacing: 0.4rem;
+  line-height: 1.4rem;
 }
 .sub-h {
-  margin-bottom: var(--p-sm);
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 .item-h {
+  margin-bottom: .5rem;
   font-weight: bold;
+   font-size: 1.2rem;
+  color: var(--header-clr);
+  letter-spacing: 0.15rem;
 }
 .item-sub-h {
+  margin-bottom: .25rem;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 .banner-text {
 }
+
 .section-heading {
   font-size: 1.75rem;
   color: var(--header-clr);
