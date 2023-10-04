@@ -43,9 +43,10 @@
 }
 
 @media screen and (min-width: 500px) {
-  .group {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .our-team {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
-
