@@ -27,6 +27,7 @@
   --p-md: 1.5rem;
   --p-ml: 2rem;
   --p-lg: 2.5rem;
+  --p-xl: 4rem;
   --sectionPadding: clamp(2.75rem, 5.82vh, 6.25rem) 0.75rem;
 
   /* font colors */

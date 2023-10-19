@@ -24,11 +24,14 @@
   .hero-info {
     display: flex;
     flex-direction: column;
-    gap: var(--p-sm);
+    gap: var(--p-s);
   }
   
   .img-container {
     padding: var(--p-md);
+  }
+  .btn-primary{
+    margin-top: var(--p-md);
   }
 }
 
@@ -48,9 +51,9 @@
   .hero-info {
     display: flex;
     flex-direction: column;
-    gap: var(--p-md);
+    gap: var(--p-sm);
     justify-content: center;
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .img-container {
