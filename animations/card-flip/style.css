@@ -1,7 +1,12 @@
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .item {
-  height: 500px;
-  width: 350px;
-  perspective: 700px;
+  aspect-ratio: 0.75;
+  width: 100%;
+  perspective: 850px;
 }
 
 .card {
@@ -13,7 +18,7 @@
 }
 
 .item:hover .card {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .front,
