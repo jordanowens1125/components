@@ -5,6 +5,7 @@ footer a {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  padding-bottom: var(--p-s);
 }
 footer .item {
   align-items: center;
@@ -22,12 +23,19 @@ footer a::after {
   background-color: var(--primary);
   transition: 0.3s;
   border-radius: var(--b-radius);
+  display: block;
 }
 footer a:hover {
   color: var(--primary);
 }
 footer a:hover::after {
   transform: scaleX(1);
+}
+footer .logo {
+  transition: 0.34s;
+}
+footer .img-container:hover .logo {
+  transform: scale(1.1);
 }
 footer .socials {
   display: flex;

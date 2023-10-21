@@ -1,0 +1,37 @@
+.item {
+  height: 500px;
+  width: 350px;
+  perspective: 700px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1200ms;
+  transform-style: preserve-3d;
+}
+
+.item:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--b-radius);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: var(--p-md);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url("https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D");
+}
+
+.back {
+  background-color: var(--black);
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=style.css.map */

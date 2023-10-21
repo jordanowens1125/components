@@ -9,6 +9,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    padding-bottom: var(--p-s);
   }
   .item {
     align-items: center;
@@ -26,11 +27,20 @@ footer {
     background-color: var(--primary);
     transition: 0.3s;
     border-radius: var(--b-radius);
+    display: block;
   }
   a:hover {
     color: var(--primary);
     &::after {
       transform: scaleX(1);
+    }
+  }
+  .logo{
+    transition: .34s;
+  }
+  .img-container:hover{
+    .logo{
+      transform: scale(1.1);
     }
   }
   .socials {
