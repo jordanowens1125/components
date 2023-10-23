@@ -1,0 +1,16 @@
+.section-name {
+  padding: 0;
+}
+.section-name .group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.section-name img {
+  object-fit: cover;
+}
+.section-name .img-container {
+  width: 101%;
+}/*# sourceMappingURL=style.css.map */
