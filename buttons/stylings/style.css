@@ -49,6 +49,15 @@ button::before {
   position: absolute;
 }
 
+.btn-4 {
+  -webkit-transform: skew(-6deg, 0);
+  transform: skew(-6deg, 0);
+}
+
+.btn-4:hover {
+  color: white;
+}
+
 @media screen and (min-width: 500px) {
   .group {
     display: grid;
@@ -64,6 +73,6 @@ button::before {
 @media screen and (min-width: 1000px) {
   .group {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
