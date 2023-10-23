@@ -137,13 +137,14 @@
     transition: .3s;
     .item-h {
       font-size: clamp(1.25rem, 2.5vw, 2rem);
+      color: var(--primary);
     }
   }
 
   .item {
     img {
       object-fit: cover;
-      aspect-ratio: 0.9;
+      aspect-ratio: 1;
     }
   }
 
@@ -170,7 +171,7 @@
   .projects {
     .group {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }

@@ -112,10 +112,11 @@
 }
 .projects .img-overlay .item-h {
   font-size: clamp(1.25rem, 2.5vw, 2rem);
+  color: var(--primary);
 }
 .projects .item img {
   object-fit: cover;
-  aspect-ratio: 0.9;
+  aspect-ratio: 1;
 }
 .projects .img-container:hover .img-overlay {
   transform: scale(1);
@@ -133,7 +134,7 @@
 @media screen and (min-width: 768px) {
   .projects .group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 900px) {
