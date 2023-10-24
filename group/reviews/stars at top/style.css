@@ -1,0 +1,65 @@
+.section-name {
+  padding: 0;
+}
+.section-name i {
+  color: var(--primary);
+}
+.section-name .container {
+  padding: var(--sectionPadding);
+}
+.section-name .bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.section-name .item {
+  background-color: var(--primary-bg-clr);
+  padding: var(--p-md);
+  border-radius: var(--b-radius);
+  position: relative;
+}
+.section-name .item-h {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.section-name .item::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  height: 25px;
+  width: 90%;
+  background-color: var(--primary);
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: inherit;
+  z-index: -1;
+}
+.section-name .stars {
+  display: flex;
+  gap: var(--p-sm);
+}
+.section-name .profile {
+  display: flex;
+  align-items: center;
+  gap: var(--p-sm);
+}
+.section-name .profile .img-container {
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+.section-name .profile .img-container img {
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+@media screen and (min-width: 48rem) {
+  .section-name .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
