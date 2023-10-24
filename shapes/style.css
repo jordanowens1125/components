@@ -1,3 +1,14 @@
-* {
+.container {
+  height: 100vh;
+  border: 1px solid var(--primary);
+}
+
+.triangle {
+  height: 100%;
+  width: 100%;
   border: 1px red solid;
+}
+
+.electricity {
+  clip-path: polygon(69% 0, 56% 37%, 100% 39%, 31% 96%, 48% 55%, 0 56%);
 }/*# sourceMappingURL=style.css.map */
