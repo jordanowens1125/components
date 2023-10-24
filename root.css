@@ -11,10 +11,10 @@
   --border-clr: rgba(5, 252, 223, 0.11);
   --white: #fff;
   --black: #161313;
-  --header-clr: #fff;
+  --header-clr: var(--black);
   --tertiary: rgb(190, 205, 227);
 
-  --borderColor: rgb(213, 220, 232);
+  --borderColor: rgb(228, 229, 231);
 
   /* background colors */
   --primary-bg-clr: #fff;
@@ -113,6 +113,10 @@ footer {
   color: var(--primary);
   fill: var(--primary);
   /* filter:  brightness(0) invert(1)  saturate(3); */
+}
+
+.heading{
+  color: var(--header-clr);
 }
 
 /* Background */
