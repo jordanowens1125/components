@@ -1,3 +1,10 @@
+.section-name .heading, .section-name .sub-h {
+  text-align: center;
+  margin: auto;
+}
+.section-name .heading {
+  margin-bottom: var(--p-md);
+}
 .section-name a {
   transition: 0.4s;
   color: var(--secondary);

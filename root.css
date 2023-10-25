@@ -92,11 +92,15 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--p-md);
+  width: 100%;
+  height: 100%;
 }
 .item {
   display: flex;
   flex-direction: column;
   gap: var(--p-sm);
+  width: 100%;
+  height: 100%;
 }
 .content {
   display: flex;
@@ -224,6 +228,7 @@ button:hover,
 textarea {
   border-radius: var(--b-radius);
   resize: vertical;
+  min-height: 12.5rem;
 }
 
 input,
