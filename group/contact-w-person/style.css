@@ -1,0 +1,40 @@
+.section-name .heading,
+.section-name .sub-h {
+  margin: 0;
+}
+.section-name input,
+.section-name textarea,
+.section-name select {
+  padding: var(--p-s);
+  background-color: var(--primaryLight);
+}
+.section-name textarea {
+  min-height: 200px;
+}
+.section-name label {
+  color: var(--header-clr);
+}
+.section-name .item {
+  gap: var(--p-s);
+}
+.section-name .content-group {
+  gap: var(--p-md);
+  margin-top: var(--p-md);
+}
+.section-name .content {
+  justify-content: center;
+}
+.section-name option:hover {
+  background-color: var(--primary);
+}
+.section-name .img-container {
+  height: fit-content;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-name .group {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+  }
+}/*# sourceMappingURL=style.css.map */

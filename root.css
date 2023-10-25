@@ -106,6 +106,7 @@ footer {
 .content-group {
   display: flex;
   gap: var(--p-s);
+  flex-direction: column;
 }
 
 /* Text color */
@@ -115,7 +116,7 @@ footer {
   /* filter:  brightness(0) invert(1)  saturate(3); */
 }
 
-.heading{
+.heading {
   color: var(--header-clr);
 }
 
@@ -159,10 +160,9 @@ button:hover,
 .heading {
   margin-bottom: 1rem;
   font-size: clamp(2.5rem, 3vw, 3.75rem);
-  text-transform: capitalize;font-size: 1.75rem;
+  text-transform: capitalize;
+  font-size: 1.75rem;
   color: var(--header-clr);
-  letter-spacing: 0.4rem;
-  line-height: 1.4rem;
 }
 .sub-h {
   margin-bottom: 2rem;
@@ -173,11 +173,11 @@ button:hover,
 }
 .item-h {
   font-weight: bold;
-   font-size: 1.2rem;
+  font-size: 1.2rem;
   letter-spacing: 0.15rem;
 }
 .item-sub-h {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-size: 0.8rem;
   color: var(--primary);
   text-transform: uppercase;
