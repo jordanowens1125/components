@@ -19,7 +19,7 @@
   textarea {
     min-height: 200px;
   }
-  label{
+  label {
     color: var(--header-clr);
   }
   .item {
@@ -46,6 +46,31 @@
     .group {
       display: grid;
       grid-template-columns: 4fr 5fr;
+    }
+    .content-group {
+      display: grid;
+      grid-template-areas:
+        "name name name email email email"
+        "number number date date service service"
+        "message message message message message message";
+    }
+    .name {
+      grid-area: name;
+    }
+    .email {
+      grid-area: email;
+    }
+    .number {
+      grid-area: number;
+    }
+    .date {
+      grid-area: date;
+    }
+    .service{
+      grid-area: service;
+    }
+    .message {
+      grid-area: message;
     }
   }
 }
