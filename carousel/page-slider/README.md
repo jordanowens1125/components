@@ -3,4 +3,4 @@
 ##https://themes.themegoods.com/architecturer/demo/vertical-parallax-slider/
 
 
-##also lok at slider tab in general
+##also look at slider tab in general

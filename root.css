@@ -24,6 +24,7 @@
   --p-xs: 0.25rem;
   --p-s: 0.5rem;
   --p-sm: 0.75rem;
+  --p-m:1rem;
   --p-md: 1.5rem;
   --p-ml: 2rem;
   --p-lg: 2.5rem;
@@ -106,7 +107,7 @@ footer {
 .content {
   display: flex;
   flex-direction: column;
-  gap: var(--p-s);
+  gap: var(--p-sm);
 }
 .content-group {
   display: flex;
@@ -179,14 +180,12 @@ button:hover,
 .item-h {
   font-weight: bold;
   font-size: 1.2rem;
-  letter-spacing: 0.15rem;
 }
 .item-sub-h {
   margin-bottom: 0.25rem;
   font-size: 0.8rem;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
 }
 .banner-text {
 }
