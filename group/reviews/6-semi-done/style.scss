@@ -1,0 +1,100 @@
+.reviews {
+  text-align: center;
+  --spacing: var(--p-md);
+  --img-size: 25%;
+  .group,
+  .cs-button-solid {
+    margin-top: var(--p-xl);
+    gap: var(--p-xl);
+  }
+
+  .heading {
+    margin: 0;
+  }
+  .item {
+    padding: var(--p-xl) var(--p-md);
+    border-radius: var(--b-radius);
+    align-items: center;
+    justify-content: center;
+    gap: var(--p-xs);
+    position: relative;
+    margin-bottom: var(--spacing);
+
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+  }
+
+  // .item:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   height: 2.5rem;
+  //   width: 25%;
+  //   transform: translateY(50%);
+  //   background-color: inherit;
+  //   -moz-box-shadow: var(--box-shadow);
+  //   -webkit-box-shadow: var(--box-shadow);
+  //   box-shadow: var(--box-shadow);
+  // }
+
+  .quote {
+    background-color: var(--white);
+  }
+  .img-container {
+    position: absolute;
+    // top: calc(-1 * var(--img-size));
+    top: 0;
+    transform: translateY(-50%);
+    width: var(--img-size);
+    height: fit-content;
+  }
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .item-h {
+    grid-area: name;
+    margin-top: auto;
+    font-size: 1.2rem;
+  }
+  .role {
+    grid-area: role;
+    margin-bottom: auto;
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+
+  .stars {
+    display: flex;
+    gap: var(--p-s);
+    color: var(--primary);
+    i {
+      position: static;
+      font-size: unset;
+    }
+  }
+
+  .stars,
+  .quote {
+    margin-top: var(--spacing);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .reviews {
+    --img-size: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .quote {
+      width: 85%;
+    }
+  }
+}

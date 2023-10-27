@@ -1,5 +1,6 @@
 .reviews {
   text-align: center;
+  --spacing: var(--p-m);
 }
 .reviews .content {
   align-items: center;
@@ -9,29 +10,41 @@
 }
 .reviews .item {
   display: grid;
-  grid-template-areas: "quote quote" "img name" "img role";
+  grid-template-areas: "i i" "heading heading" "quote quote" "img name" "img role";
   grid-template-columns: min-content 5fr;
-  row-gap: var(--p-xs);
-  column-gap: var(--p-md);
+  row-gap: 0;
+  column-gap: var(--p-m);
   text-align: left;
+  border-radius: var(--b-radius);
+  padding: var(--p-ml);
+  padding-top: 0;
   -moz-box-shadow: var(--box-shadow);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
 }
-.reviews .quote {
+.reviews i {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+.reviews .quote-1 {
+  grid-area: heading;
+  color: var(--header-clr);
+}
+.reviews .quote-2 {
   background-color: var(--white);
-  padding: var(--p-ml);
-  border-radius: 8px;
-  box-shadow: var(--box-shadow);
-  opacity: 0.7;
   grid-area: quote;
-  margin-bottom: var(--p-md);
+}
+.reviews .quote-1,
+.reviews .quote-2,
+.reviews i {
+  margin-bottom: var(--spacing);
 }
 .reviews .img-container {
   border-radius: 50%;
   grid-area: img;
   aspect-ratio: 1;
-  min-width: 3rem;
+  min-width: 4rem;
 }
 .reviews img {
   object-fit: cover;
@@ -40,11 +53,11 @@
   grid-area: name;
   margin-top: auto;
   font-size: 1.2rem;
+  color: var(--header-clr);
 }
 .reviews .role {
   grid-area: role;
   margin-bottom: auto;
-  opacity: 0.8;
   font-size: 0.9rem;
 }
 .reviews .group {

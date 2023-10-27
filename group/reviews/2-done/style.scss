@@ -18,6 +18,9 @@
     background-color: var(--borderColor);
     text-align: left;
     padding-right: var(--item-padding-left);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
   }
 
   .item > * {

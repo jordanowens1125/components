@@ -21,6 +21,10 @@
     border-radius: var(--b-radius);
     position: relative;
     gap: var(--p-md);
+
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
   }
   .item-h {
     margin: 0;

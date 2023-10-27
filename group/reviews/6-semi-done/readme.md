@@ -1,0 +1,1 @@
+Not sure how to get text message triangle shape at the bottom like in capture 6 img

@@ -1,0 +1,108 @@
+.reviews {
+  text-align: center;
+  --item-padding: var(--p-md);
+  --spacing: var(--p-sm);
+  .group {
+    margin-top: var(--p-lg);
+    gap: var(--p-xl);
+  }
+  .content {
+    align-items: center;
+  }
+  .item {
+    row-gap: var(--p-xs);
+    column-gap: var(--p-md);
+    text-align: left;
+    padding: var(--item-padding);
+    padding-top: 15%;
+    border-radius: var(--b-radius);
+    i {
+      color: var(--primary);
+    }
+
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+  }
+  .quote {
+    opacity: 0.7;
+    grid-area: quote;
+    padding-bottom: var(--spacing);
+    border-bottom: 1px solid var(--borderColor);
+  }
+  .img-container {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--item-padding);
+    margin: auto;
+    i {
+      color: var(--borderColor);
+      font-size: 2rem;
+    }
+  }
+  img {
+    border-radius: 50%;
+    width: 20%;
+    object-fit: cover;
+  }
+  .item-h {
+    grid-area: name;
+    margin-top: auto;
+    font-size: 1.2rem;
+    padding-top: var(--spacing);
+  }
+  .role {
+    grid-area: role;
+    margin-bottom: auto;
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  .stars {
+    grid-area: stars;
+    display: flex;
+    gap: var(--p-xs);
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 26.5rem) {
+  .reviews {
+    .item {
+      display: grid;
+      grid-template-areas:
+        "quote quote"
+        "name stars"
+        "role stars";
+      grid-template-columns: 1fr min-content;
+      grid-template-rows: min-content;
+      padding-top: 10%;
+    }
+    .quote{
+      margin-top: var(--p-sm);
+    }
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .reviews {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--p-xl);
+    }
+  }
+}
+
+// @media screen and (min-width: 64rem) {
+//   .reviews {
+//     .group {
+//       grid-template-columns: repeat(4, 1fr);
+//     }
+//   }
+// }
