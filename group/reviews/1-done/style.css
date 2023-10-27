@@ -1,0 +1,85 @@
+.reviews {
+  text-align: center;
+  --item-padding-horizontal: var(--p-md);
+}
+.reviews .group,
+.reviews .cs-button-solid {
+  margin-top: var(--p-lg);
+}
+.reviews .content {
+  align-items: center;
+}
+.reviews .heading {
+  margin: 0;
+}
+.reviews .item {
+  grid-template-columns: min-content 5fr;
+  row-gap: var(--p-xs);
+  column-gap: var(--p-sm);
+  text-align: left;
+  padding: var(--p-lg) var(--item-padding-horizontal);
+  border-radius: var(--b-radius);
+  -moz-box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+.reviews i {
+  position: absolute;
+  top: -20px;
+  color: var(--primary);
+  left: var(--item-padding-horizontal);
+  font-size: 2.75rem;
+}
+.reviews .quote {
+  background-color: var(--white);
+  grid-area: quote;
+}
+.reviews .img-container {
+  border-radius: 50%;
+  grid-area: img;
+  aspect-ratio: 1;
+  min-width: 2rem;
+  max-width: 8rem;
+}
+.reviews img {
+  object-fit: cover;
+}
+.reviews .item-h {
+  grid-area: name;
+  margin-top: auto;
+  font-size: 1.2rem;
+}
+.reviews .role {
+  grid-area: role;
+  margin-bottom: auto;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.reviews .stars {
+  display: flex;
+  gap: var(--p-sm);
+  color: var(--primary);
+  grid-area: stars;
+}
+.reviews .stars i {
+  position: static;
+  font-size: unset;
+}
+
+@media screen and (min-width: 425px) {
+  .reviews .item {
+    display: grid;
+    grid-template-areas: "img name" "img role" "quote quote" "stars stars";
+  }
+  .reviews .quote,
+  .reviews .stars {
+    padding-top: var(--p-m);
+  }
+}
+@media screen and (min-width: 64rem) {
+  .reviews .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--p-lg);
+  }
+}/*# sourceMappingURL=style.css.map */
