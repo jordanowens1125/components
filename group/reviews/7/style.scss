@@ -17,9 +17,10 @@
   }
   .item {
     background-color: var(--primary-bg-clr);
-    padding: var(--p-md);
+    padding: var(--p-m);
     border-radius: var(--b-radius);
     position: relative;
+    gap: var(--p-md);
   }
   .item-h {
     margin: 0;

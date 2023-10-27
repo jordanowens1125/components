@@ -1,0 +1,57 @@
+.reviews {
+  text-align: center;
+}
+.reviews .content {
+  align-items: center;
+}
+.reviews .heading {
+  margin: 0;
+}
+.reviews .item {
+  display: grid;
+  grid-template-areas: "quote quote" "img name" "img role";
+  grid-template-columns: min-content 5fr;
+  row-gap: var(--p-xs);
+  column-gap: var(--p-md);
+  text-align: left;
+}
+.reviews .quote {
+  background-color: var(--white);
+  padding: var(--p-ml);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  opacity: 0.7;
+  grid-area: quote;
+  margin-bottom: var(--p-md);
+}
+.reviews .img-container {
+  border-radius: 50%;
+  grid-area: img;
+  aspect-ratio: 1;
+  min-width: 3rem;
+}
+.reviews img {
+  object-fit: cover;
+}
+.reviews .item-h {
+  grid-area: name;
+  margin-top: auto;
+  font-size: 1.2rem;
+}
+.reviews .role {
+  grid-area: role;
+  margin-bottom: auto;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.reviews .group {
+  margin-top: var(--p-lg);
+  gap: var(--p-xl);
+}
+
+@media screen and (min-width: 64rem) {
+  .reviews .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
