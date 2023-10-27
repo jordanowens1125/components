@@ -1,0 +1,40 @@
+.section-name {
+  --spacing: var(--p-sm);
+}
+.section-name .sub-h,
+.section-name .heading {
+  margin: 0;
+}
+.section-name .heading,
+.section-name b,
+.section-name .text {
+  margin-bottom: var(--spacing);
+}
+.section-name .content-group {
+  margin-top: var(--spacing);
+  gap: var(--p-m);
+}
+.section-name .content-group .item {
+  border-radius: var(--b-radius);
+  justify-content: center;
+  gap: var(--p-xs);
+}
+.section-name .content-group .item-h {
+  color: inherit;
+  color: var(--primary);
+  font-size: 2.8rem;
+  display: flex;
+  gap: var(--p-sm);
+}
+.section-name .content-group .item-h span {
+  font-size: 1.8rem;
+  margin-top: 0;
+  height: 100%;
+}
+@media screen and (min-width: 26rem) {
+  .section-name .content-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

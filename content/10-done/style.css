@@ -1,0 +1,38 @@
+.section-name .heading,
+.section-name .sub-h {
+  margin: 0;
+}
+.section-name .content-group {
+  margin-top: var(--p-m);
+}
+.section-name .item {
+  display: grid;
+  grid-template-areas: "heading sub" "p p";
+  grid-template-columns: max-content 1fr;
+  gap: 0;
+}
+.section-name .item-h,
+.section-name .item-sub-h {
+  margin: auto;
+  margin-left: 0;
+}
+.section-name .item-h {
+  color: var(--primary);
+  padding-right: var(--p-sm);
+  font-size: 2.15rem;
+}
+.section-name .item-sub-h {
+  font-weight: bold;
+  color: var(--header-clr);
+}
+.section-name .text {
+  grid-area: p;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name .content-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--p-md);
+  }
+}/*# sourceMappingURL=style.css.map */
