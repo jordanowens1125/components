@@ -1,0 +1,138 @@
+.faq-section {
+  img {
+    object-fit: cover;
+  }
+  .group {
+    gap: var(--p-md);
+  }
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+  .img-container {
+    height: 0;
+    width: 0;
+  }
+
+  .accordion {
+    padding: var(--p-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-md);
+
+    .heading {
+      margin-bottom: var(--p-lg);
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--p-sm);
+      cursor: pointer;
+      border: 1px solid var(--light-bg);
+      background-color: var(--light-bg);
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      color: var(--headerColor);
+      i {
+        color: inherit;
+      }
+      -webkit-box-shadow: var(--box-shadow);
+      -moz-box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
+    }
+
+    label:hover {
+      border: 1px var(--primary) solid;
+    }
+
+    .accordion-content {
+      transition: 0.8s;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease-in-out;
+      margin-left: var(--p-md);
+      margin-right: var(--p-md);
+      margin-top: var(--p-sm);
+      margin-bottom: var(--p-sm);
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
+
+  .accordion [id^="accordion"]:checked ~ div[id^="accordion-content"] {
+    display: block;
+    max-height: 300px;
+  }
+
+  .accordion [id^="accordion"]:checked + label {
+    color: var(--headerColor);
+    border: 1px solid var(--primary);
+  }
+}
+
+.dark-mode .faq-section {
+  .accordion {
+    label {
+      color: var(--primary-bg-color);
+    }
+  }
+  .accordion [id^="accordion"]:checked + label {
+    color: var(--primary);
+    border: 1px solid transparent;
+    background-color: var(--borderColor);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .faq-section {
+    .group {
+      display: grid;
+      grid-template-columns: 4.5fr 5.5fr;
+      gap: var(--p-xl);
+    }
+    .sub-h {
+      margin-left: 0;
+    }
+    .heading {
+      margin-left: 0;
+      text-align: left;
+    }
+    .img-container {
+      height: fit-content;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--p-md);
+      grid-template-areas:
+        "one two"
+        "one three";
+      img {
+        // object-fit: cover;
+      }
+    }
+    .img-1 {
+      grid-area: one;
+      height: 75%;
+      align-self: center;
+    }
+    .img-2 {
+      grid-area: two;
+      aspect-ratio: 1;
+    }
+    .img-3 {
+      grid-area: three;
+      aspect-ratio: 1;
+    }
+    .heading,
+    .sub-h {
+      margin: 0;
+    }
+    .cs-button-solid {
+      width: fit-content;
+    }
+  }
+}

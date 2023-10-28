@@ -1,0 +1,117 @@
+.faq-section img {
+  object-fit: cover;
+}
+.faq-section .group {
+  gap: var(--p-md);
+}
+.faq-section .content {
+  align-items: center;
+  justify-content: center;
+}
+.faq-section .img-container {
+  height: 0;
+  width: 0;
+}
+.faq-section .accordion {
+  padding: var(--p-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-md);
+}
+.faq-section .accordion .heading {
+  margin-bottom: var(--p-lg);
+}
+.faq-section .accordion label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--p-sm);
+  cursor: pointer;
+  border: 1px solid var(--light-bg);
+  background-color: var(--light-bg);
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  color: var(--headerColor);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+.faq-section .accordion label i {
+  color: inherit;
+}
+.faq-section .accordion label:hover {
+  border: 1px var(--primary) solid;
+}
+.faq-section .accordion .accordion-content {
+  transition: 0.8s;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+  margin-left: var(--p-md);
+  margin-right: var(--p-md);
+  margin-top: var(--p-sm);
+  margin-bottom: var(--p-sm);
+}
+.faq-section .accordion input[type=checkbox] {
+  display: none;
+}
+.faq-section .accordion [id^=accordion]:checked ~ div[id^=accordion-content] {
+  display: block;
+  max-height: 300px;
+}
+.faq-section .accordion [id^=accordion]:checked + label {
+  color: var(--headerColor);
+  border: 1px solid var(--primary);
+}
+
+.dark-mode .faq-section .accordion label {
+  color: var(--primary-bg-color);
+}
+.dark-mode .faq-section .accordion [id^=accordion]:checked + label {
+  color: var(--primary);
+  border: 1px solid transparent;
+  background-color: var(--borderColor);
+}
+
+@media screen and (min-width: 1024px) {
+  .faq-section .group {
+    display: grid;
+    grid-template-columns: 4.5fr 5.5fr;
+    gap: var(--p-xl);
+  }
+  .faq-section .sub-h {
+    margin-left: 0;
+  }
+  .faq-section .heading {
+    margin-left: 0;
+    text-align: left;
+  }
+  .faq-section .img-container {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--p-md);
+    grid-template-areas: "one two" "one three";
+  }
+  .faq-section .img-1 {
+    grid-area: one;
+    height: 75%;
+    align-self: center;
+  }
+  .faq-section .img-2 {
+    grid-area: two;
+    aspect-ratio: 1;
+  }
+  .faq-section .img-3 {
+    grid-area: three;
+    aspect-ratio: 1;
+  }
+  .faq-section .heading,
+  .faq-section .sub-h {
+    margin: 0;
+  }
+  .faq-section .cs-button-solid {
+    width: fit-content;
+  }
+}/*# sourceMappingURL=style.css.map */
