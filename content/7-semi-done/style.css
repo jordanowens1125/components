@@ -20,14 +20,14 @@
   justify-content: center;
   padding: var(--p-ml);
   text-align: center;
+  aspect-ratio: 1;
 }
 .section-name .content-group i {
-  font-size: 1.8rem;
+  font-size: 3rem;
   padding: var(--p-m);
 }
 .section-name .content-group .item-h {
   color: inherit;
-  margin-top: auto;
 }
 
 @media screen and (min-width: 48rem) {

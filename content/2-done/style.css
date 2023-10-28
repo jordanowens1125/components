@@ -20,7 +20,6 @@
 }
 .section-name .content-group .item-h {
   color: var(--header-clr);
-  font-size: 1rem;
 }
 .section-name .content-group, .section-name .cs-button-solid {
   margin-top: var(--spacing);

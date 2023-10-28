@@ -205,16 +205,14 @@ button:hover,
 }
 
 .item-heading {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--header-clr);
-  letter-spacing: 0.15rem;
 }
 
 .item-sub-heading {
   font-size: 0.8rem;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
 }
 
 .item-sub-heading-2 {

@@ -23,14 +23,14 @@
       justify-content: center;
       padding: var(--p-ml);
       text-align: center;
+      aspect-ratio: 1;
     }
     i {
-      font-size: 1.8rem;
+      font-size: 3rem;
       padding: var(--p-m);
     }
     .item-h {
       color: inherit;
-      margin-top: auto;
     }
   }
 }
