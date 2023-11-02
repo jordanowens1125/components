@@ -11,7 +11,7 @@
 }
 .section-name .item-h {
   font-size: 1.25rem;
-  color: var(--header-clr);
+  color: var(--header-color);
 }
 .section-name i {
   font-size: 2.25rem;

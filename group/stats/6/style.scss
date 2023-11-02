@@ -1,0 +1,55 @@
+// * {
+//   border: 1px red solid;
+// }
+
+.section-name {
+  background-color: pink;
+  z-index: 5;
+  justify-content: center;
+  .float{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+  }
+  .item{
+    border: 1px red solid;
+  }
+  .container {
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section-name {
+    .group {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.section-1 {
+  background-color: var(--primary);
+}
+
+.section-2 {
+  background-color: var(--secondary);
+}

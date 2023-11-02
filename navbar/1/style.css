@@ -1,0 +1,92 @@
+body {
+  height: 500vh;
+}
+
+header {
+  --padding: var(--p-sm);
+  background-color: var(--primary);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  max-width: unset;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  background-color: inherit;
+}
+header .logo {
+  padding-left: var(--padding);
+}
+header .nav-toggle {
+  display: none;
+}
+header .nav-toggle-label {
+  height: 100%;
+  display: flex;
+  padding-right: var(--padding);
+}
+header .nav-toggle-label span,
+header .nav-toggle-label span::before,
+header .nav-toggle-label span::after {
+  display: block;
+  background-color: var(--white);
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+header .nav-toggle-label span::before,
+header .nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+header .nav-toggle-label span::before {
+  bottom: 7px;
+}
+header .nav-toggle-label span::after {
+  top: 7px;
+}
+header nav {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background-color: inherit;
+  transform: scaleY(0);
+  transition: transform 400ms ease-in-out;
+  transform-origin: top;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+}
+header nav ul li {
+  padding: var(--padding) 0;
+  display: flex;
+  color: var(--white);
+}
+header nav ul li a {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+header nav ul li:hover a {
+  color: var(--white);
+}
+header #nav-toggle:checked ~ nav {
+  transform: scaleY(1);
+}
+header #nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav-toggle-label {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -21,6 +21,8 @@ https://themeforest.net/item/bolt-electrical-services-construction-elementor-tem
 https://preview.themeforest.net/item/electriza-electrical-installation-maintenance-services-elementor-template-kit/full_screen_preview/32889244?_ga=2.128249994.765303781.1698104269-1142136645.1697818450&_gac=1.115551604.1697818450.CjwKCAjwysipBhBXEiwApJOcu5Gx5TFBmqhdRPkKsWpi2pzxNvRFWPEPNzZrAIKQkdrkdJkuztFJxRoCEGQQAvD_BwE
 
 
+https://themeforest.net/item/gelect-electrical-installation-maintenance-elementor-template-kit/48980884
+
 https://themeforest.net/item/rewired-electrical-installation-maintenance-services-elementor-template-kit/37181269
 
 http://preview.themeforest.net/item/cabel-electricity-services-elementor-template-kit/full_screen_preview/33051505?_ga=2.174403876.765303781.1698104269-1142136645.1697818450&_gac=1.161759950.1697818450.CjwKCAjwysipBhBXEiwApJOcu5Gx5TFBmqhdRPkKsWpi2pzxNvRFWPEPNzZrAIKQkdrkdJkuztFJxRoCEGQQAvD_BwE
