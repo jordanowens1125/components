@@ -27,8 +27,8 @@
   --p-m:1rem;
   --p-md: 1.5rem;
   --p-ml: 2rem;
-  --p-lg: 2.5rem;
-  --p-xl: 4rem;
+  --p-lg: 3rem;
+  --p-xl: 5rem;
   --sectionPadding: clamp(2.75rem, 5.82vh, 6.25rem) 0.75rem;
 
   /* font colors */
@@ -38,7 +38,7 @@
   --text-x-light: rgb(255, 226, 230);
 
   /* border radius */
-  --b-radius: 4px;
+  --b-radius: 8px;
   --box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   --maxContainerWidth: 80rem;
 }
