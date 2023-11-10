@@ -10,6 +10,7 @@
   text-align: left;
   border: 1px solid var(--borderColor);
   position: relative;
+  overflow: hidden;
 }
 .section-name .item .img-container {
   position: absolute;
