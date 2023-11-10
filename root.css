@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --primary: rgb(21, 182, 164);
+  --primary: hsl(173, 79%, 40%);
   --primaryDark: rgb(19, 134, 121);
   --primaryLight: rgb(197, 253, 247);
   --primary-rgb: 21, 182, 164;
@@ -24,11 +24,29 @@
   --p-xs: 0.25rem;
   --p-s: 0.5rem;
   --p-sm: 0.75rem;
-  --p-m:1rem;
+  --p-m: 1rem;
   --p-md: 1.5rem;
   --p-ml: 2rem;
   --p-lg: 3rem;
   --p-xl: 5rem;
+
+  --xxxs: 0.25rem;
+  --xxs: 0.5rem;
+  --xs: 0.75rem;
+  --s: 1rem;
+  --sm: 1.5rem;
+  --sl: 2rem;
+  --sx: 3rem;
+  --m: 4rem;
+  --md: 6rem;
+  --ml: 8rem;
+  --mx: 12rem;
+  --l: 16rem;
+  --xl: 24rem;
+  --xxl: 32rem;
+  --xxxl: 40rem;
+  --xxxxl: 48rem;
+
   --sectionPadding: clamp(2.75rem, 5.82vh, 6.25rem) 0.75rem;
 
   /* font colors */
@@ -172,7 +190,7 @@ button:hover,
   color: var(--header-clr);
 }
 .sub-h {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: var(--primary);
   text-transform: uppercase;
 }

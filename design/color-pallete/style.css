@@ -1,0 +1,218 @@
+:root {
+  --primary-900: #063731;
+  --primary-800: black;
+  --primary-700: #0d6d62;
+  --primary-600: black;
+  --primary-500: var(--primary);
+  --primary-400: black;
+  --primary-300: #5bccbf;
+  --primary-200: black;
+  --primary-100: rgb(238, 250, 249);
+  --neutral-900: black;
+  --neutral-800: black;
+  --neutral-700: black;
+  --neutral-600: black;
+  --neutral-500: black;
+  --neutral-400: black;
+  --neutral-300: black;
+  --neutral-200: black;
+  --neutral-100: black;
+  --accent-900: black;
+  --accent-800: black;
+  --accent-700: black;
+  --accent-600: black;
+  --accent-500: black;
+  --accent-400: black;
+  --accent-300: black;
+  --accent-200: black;
+  --accent-100: black;
+  --warning-900: black;
+  --warning-800: black;
+  --warning-700: black;
+  --warning-600: black;
+  --warning-500: black;
+  --warning-400: black;
+  --warning-300: black;
+  --warning-200: black;
+  --warning-100: black;
+  --error-900: black;
+  --error-800: black;
+  --error-700: black;
+  --error-600: black;
+  --error-500: black;
+  --error-400: black;
+  --error-300: black;
+  --error-200: black;
+  --error-100: black;
+}
+
+.colors .group {
+  gap: var(--p-lg);
+}
+.colors .neutral,
+.colors .primary,
+.colors .accents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colors .boxes {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1rem;
+}
+.colors .box {
+  height: 3rem;
+  width: 3rem;
+  background-color: pink;
+}
+.colors .primary .box:nth-child(1) {
+  background-color: var(--primary-900);
+}
+.colors .primary .box:nth-child(2) {
+  background-color: var(--primary-800);
+}
+.colors .primary .box:nth-child(3) {
+  background-color: var(--primary-700);
+}
+.colors .primary .box:nth-child(4) {
+  background-color: var(--primary-600);
+}
+.colors .primary .box:nth-child(5) {
+  background-color: var(--primary-500);
+}
+.colors .primary .box:nth-child(6) {
+  background-color: var(--primary-400);
+}
+.colors .primary .box:nth-child(7) {
+  background-color: var(--primary-300);
+}
+.colors .primary .box:nth-child(8) {
+  background-color: var(--primary-200);
+}
+.colors .primary .box:nth-child(9) {
+  background-color: var(--primary-100);
+}
+.colors .neutral .box:nth-child(1) {
+  background-color: var(--neutral-900);
+}
+.colors .neutral .box:nth-child(2) {
+  background-color: var(--neutral-800);
+}
+.colors .neutral .box:nth-child(3) {
+  background-color: var(--neutral-700);
+}
+.colors .neutral .box:nth-child(4) {
+  background-color: var(--neutral-600);
+}
+.colors .neutral .box:nth-child(5) {
+  background-color: var(--neutral-500);
+}
+.colors .neutral .box:nth-child(6) {
+  background-color: var(--neutral-400);
+}
+.colors .neutral .box:nth-child(7) {
+  background-color: var(--neutral-300);
+}
+.colors .neutral .box:nth-child(8) {
+  background-color: var(--neutral-200);
+}
+.colors .neutral .box:nth-child(9) {
+  background-color: var(--neutral-100);
+}
+.colors .accents .box:nth-child(1) {
+  background-color: var(--accent-900);
+}
+.colors .accents .box:nth-child(2) {
+  background-color: var(--accent-800);
+}
+.colors .accents .box:nth-child(3) {
+  background-color: var(--accent-700);
+}
+.colors .accents .box:nth-child(4) {
+  background-color: var(--accent-600);
+}
+.colors .accents .box:nth-child(5) {
+  background-color: var(--accent-500);
+}
+.colors .accents .box:nth-child(6) {
+  background-color: var(--accent-400);
+}
+.colors .accents .box:nth-child(7) {
+  background-color: var(--accent-300);
+}
+.colors .accents .box:nth-child(8) {
+  background-color: var(--accent-200);
+}
+.colors .accents .box:nth-child(9) {
+  background-color: var(--accent-100);
+}
+.colors .accents .box:nth-child(10) {
+  background-color: var(--warning-900);
+}
+.colors .accents .box:nth-child(11) {
+  background-color: var(--warning-800);
+}
+.colors .accents .box:nth-child(12) {
+  background-color: var(--warning-700);
+}
+.colors .accents .box:nth-child(13) {
+  background-color: var(--warning-600);
+}
+.colors .accents .box:nth-child(14) {
+  background-color: var(--warning-500);
+}
+.colors .accents .box:nth-child(15) {
+  background-color: var(--warning-400);
+}
+.colors .accents .box:nth-child(16) {
+  background-color: var(--warning-300);
+}
+.colors .accents .box:nth-child(17) {
+  background-color: var(--warning-200);
+}
+.colors .accents .box:nth-child(18) {
+  background-color: var(--warning-100);
+}
+.colors .accents .box:nth-child(19) {
+  background-color: var(--error-900);
+}
+.colors .accents .box:nth-child(20) {
+  background-color: var(--error-800);
+}
+.colors .accents .box:nth-child(21) {
+  background-color: var(--error-700);
+}
+.colors .accents .box:nth-child(22) {
+  background-color: var(--error-600);
+}
+.colors .accents .box:nth-child(23) {
+  background-color: var(--error-500);
+}
+.colors .accents .box:nth-child(24) {
+  background-color: var(--error-400);
+}
+.colors .accents .box:nth-child(25) {
+  background-color: var(--error-300);
+}
+.colors .accents .box:nth-child(26) {
+  background-color: var(--error-200);
+}
+.colors .accents .box:nth-child(27) {
+  background-color: var(--error-100);
+}
+
+.primary-test .alert {
+  background-color: var(--primary-100);
+  padding: var(--s);
+}
+.primary-test .alert span {
+  color: var(--primary-900);
+}
+.primary-test .alert p {
+  color: var(--primary-500);
+}
+.primary-test button {
+  background-color: var(--primary-500);
+  color: var(--white);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+:root {
+  --xxxs: 0.25rem;
+  --xxs: 0.5rem;
+  --xs: 0.75rem;
+  --s: 1rem;
+  --sm: 1.5rem;
+  --sl: 2rem;
+  --sx: 3rem;
+  --m: 4rem;
+  --md: 6rem;
+  --ml: 8rem;
+  --mx: 12rem;
+  --l: 16rem;
+  --xl: 24rem;
+  --xxl: 32rem;
+  --xxxl: 40rem;
+  --xxxxl: 48rem;
+}
+
+.section-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-name .row {
+  height: 1rem;
+  background-color: var(--primary);
+}
+.section-name .one {
+  width: var(--xxxs);
+}
+.section-name .two {
+  width: var(--xxs);
+}
+.section-name .three {
+  width: var(--xs);
+}
+.section-name .four {
+  width: var(--s);
+}
+.section-name .five {
+  width: var(--sm);
+}
+.section-name .six {
+  width: var(--sl);
+}
+.section-name .seven {
+  width: var(--sx);
+}
+.section-name .eight {
+  width: var(--m);
+}
+.section-name .nine {
+  width: var(--md);
+}
+.section-name .ten {
+  width: var(--ml);
+}
+.section-name .eleven {
+  width: var(--mx);
+}
+.section-name .twelve {
+  width: var(--l);
+}
+.section-name .thirteen {
+  width: var(--xl);
+}
+.section-name .fourteen {
+  width: var(--xxl);
+}
+.section-name .fifteen {
+  width: var(--xxxl);
+}
+.section-name .sixteen {
+  width: var(--xxxxl);
+}/*# sourceMappingURL=style.css.map */
