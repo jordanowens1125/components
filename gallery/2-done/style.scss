@@ -1,0 +1,104 @@
+* {
+  // border: 1px red solid;
+}
+
+.section-name {
+  text-align: center;
+  .img-container {
+    aspect-ratio: 1;
+    border-radius: var(--b-radius);
+    height: fit-content;
+    img {
+      object-fit: cover;
+    }
+  }
+  .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: var(--p-sm);
+      grid-template-areas:
+        ".    .       img4    .       img9    .       .     "
+        ".    img2    img4     img7   img9    img12   .     "
+        "img1 img2    img5     img7   img10   img12   img14 "
+        "img1 img3    img5     img8   img10   img13   img14 "
+        ".    img3    img6     img8   img11   img13   .     "
+        ".    .       img6     .      img11   .       .     ";
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: var(--p-sm);
+      align-items: center;
+      justify-content: center;
+    }
+    .group .img-container{
+      grid-area: var(--grid-area);
+    }
+    // .group :nth-child(1){
+    //   grid-area: img1;
+    // }
+    // .group :nth-child(2){
+    //   grid-area: img2;
+    // }
+    // .group :nth-child(3){
+    //   grid-area: img3;
+    // }
+    // .group :nth-child(4){
+    //   grid-area: img4;
+    // }
+    // .group :nth-child(5){
+    //   grid-area: img5;
+    // }
+    // .group :nth-child(6){
+    //   grid-area: img6;
+    // }
+    // .group :nth-child(7){
+    //   grid-area: img7;
+    // }
+    // .group :nth-child(8){
+    //   grid-area: img8;
+    // }
+    // .group :nth-child(9){
+    //   grid-area: img9;
+    // }
+    // .group :nth-child(10){
+    //   grid-area: img10;
+    // }
+    // .group :nth-child(11){
+    //   grid-area: img11;
+    // }
+    // .group :nth-child(12){
+    //   grid-area: img12;
+    // }
+    // .group :nth-child(13){
+    //   grid-area: img13;
+    // }
+    // .group :nth-child(14){
+    //   grid-area: img14;
+    // }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section-name {
+    .group {
+      gap: var(--p-md);
+    }
+    .column {
+      gap: var(--p-md);
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .section-name {
+  }
+}

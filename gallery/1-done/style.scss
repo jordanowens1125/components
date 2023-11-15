@@ -1,0 +1,35 @@
+* {
+  // border: 1px red solid;
+}
+
+.section-name {
+  text-align: center;
+  .img-container {
+    aspect-ratio: 1;
+    img{
+      object-fit: cover;
+    }
+  }
+  .center{
+    grid-row: span 2;
+    grid-column: span 2;
+    grid-area: center;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name {
+    .group {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      '. center center .'
+      '. center center .';
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .section-name {
+  }
+}

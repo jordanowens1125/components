@@ -1,0 +1,75 @@
+// * {
+//   border: 1px red solid;
+// }
+
+.section-name {
+  text-align: center;
+  .item {
+    position: relative;
+  }
+  .info {
+    position: absolute;
+    bottom: 10%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: var(--white);
+  }
+  .content {
+    grid-column: -1/1;
+    align-items: start;
+    text-align: left;
+    .cs-button-solid {
+      margin-top: var(--p-m);
+    }
+  }
+  img {
+    object-fit: cover;
+  }
+  .cs-button-solid {
+    margin-left: 0;
+    width: fit-content;
+    grid-area: button;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "content content content"
+        "img img img"
+        "button button button";
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section-name {
+    --content-padding: var(--p-lg);
+    .group {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "content img img img"
+        "button img img img";
+    }
+    .content {
+      grid-column: unset;
+      margin-right: var(--p-lg);
+      padding-top: var(--content-padding);
+    }
+    .cs-button-solid {
+      padding-bottom: var(--content-padding);
+    }
+    .img-container {
+      grid-row: -1/1;
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .section-name {
+  }
+}

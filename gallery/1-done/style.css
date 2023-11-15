@@ -1,0 +1,22 @@
+.section-name {
+  text-align: center;
+}
+.section-name .img-container {
+  aspect-ratio: 1;
+}
+.section-name .img-container img {
+  object-fit: cover;
+}
+.section-name .center {
+  grid-row: span 2;
+  grid-column: span 2;
+  grid-area: center;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". center center ." ". center center .";
+  }
+}/*# sourceMappingURL=style.css.map */

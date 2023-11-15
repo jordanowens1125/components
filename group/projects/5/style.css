@@ -1,0 +1,58 @@
+.section-name {
+  text-align: center;
+}
+.section-name .item {
+  position: relative;
+}
+.section-name .info {
+  position: absolute;
+  bottom: 10%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: var(--white);
+}
+.section-name .content {
+  grid-column: -1/1;
+  align-items: start;
+  text-align: left;
+}
+.section-name .content .cs-button-solid {
+  margin-top: var(--p-m);
+}
+.section-name img {
+  object-fit: cover;
+}
+.section-name .cs-button-solid {
+  margin-left: 0;
+  width: fit-content;
+  grid-area: button;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .section-name .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "content content content" "img img img" "button button button";
+  }
+}
+@media screen and (min-width: 64rem) {
+  .section-name {
+    --content-padding: var(--p-lg);
+  }
+  .section-name .group {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "content img img img" "button img img img";
+  }
+  .section-name .content {
+    grid-column: unset;
+    margin-right: var(--p-lg);
+    padding-top: var(--content-padding);
+  }
+  .section-name .cs-button-solid {
+    padding-bottom: var(--content-padding);
+  }
+  .section-name .img-container {
+    grid-row: -1/1;
+  }
+}/*# sourceMappingURL=style.css.map */
