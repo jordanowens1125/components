@@ -135,11 +135,10 @@ footer {
 }
 
 /* Text color */
-.primary {
+/* .primary {
   color: var(--primary);
   fill: var(--primary);
-  /* filter:  brightness(0) invert(1)  saturate(3); */
-}
+} */
 
 .heading {
   color: var(--header-clr);
