@@ -1,0 +1,125 @@
+.reviews {
+  text-align: center;
+  --item-padding-horizontal: var(--p-md);
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-md);
+  }
+  .group,
+  .cs-button-solid {
+    margin-top: var(--p-lg);
+  }
+  .content {
+    align-items: center;
+  }
+  .heading {
+    margin: 0;
+  }
+  .item {
+    grid-template-columns: min-content 5fr;
+    row-gap: var(--p-xs);
+    column-gap: var(--p-sm);
+    text-align: left;
+    padding: var(--p-lg) var(--item-padding-horizontal);
+    border-radius: var(--b-radius);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+  }
+  i {
+    position: absolute;
+    top: -20px;
+    color: var(--primary);
+    left: var(--item-padding-horizontal);
+    font-size: 2.75rem;
+  }
+  .quote {
+    background-color: var(--white);
+    grid-area: quote;
+  }
+  .img-container {
+    border-radius: 50%;
+    grid-area: img;
+    aspect-ratio: 1;
+    min-width: 2rem;
+    max-width: 8rem;
+  }
+  img {
+    object-fit: cover;
+  }
+  .item-h {
+    grid-area: name;
+    margin-top: auto;
+    font-size: 1.2rem;
+  }
+  .role {
+    grid-area: role;
+    margin-bottom: auto;
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+
+  .stars {
+    display: flex;
+    gap: var(--p-sm);
+    color: var(--primary);
+    grid-area: stars;
+    i {
+      position: static;
+      font-size: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .reviews {
+    .item {
+      display: grid;
+      grid-template-areas:
+        "img name"
+        "img role"
+        "quote quote"
+        "stars stars";
+    }
+    .quote,
+    .stars {
+      padding-top: var(--p-m);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .reviews {
+    text-align: left;
+    .container {
+      display: grid;
+      gap: var(--p-xl);
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-areas: 
+      'content group'
+      'button group'
+      ;
+      row-gap: var(--p-sm);
+    }
+    .cs-button-solid{
+      grid-area: button;
+      height: fit-content;
+      margin: 0;
+    }
+    .content{
+      grid-area: content;
+      height: fit-content;
+      margin-bottom: 0;
+      margin-top: auto;
+      text-align: left;
+      align-items: start;
+    }
+    .group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--p-lg);
+      grid-area: group;
+    }
+  }
+}
