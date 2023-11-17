@@ -1,0 +1,34 @@
+.section-name {
+  text-align: center;
+}
+.section-name .group {
+  gap: var(--p-sm);
+}
+.section-name img {
+  object-fit: cover;
+}
+.section-name .cs-button-solid,
+.section-name a {
+  grid-column: -1/1;
+  margin: auto;
+  margin-top: var(--p-md);
+}
+.section-name .lg {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 31.25rem) {
+  .section-name .group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+  .section-name .img-container {
+    max-height: 325px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .section-name .group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
