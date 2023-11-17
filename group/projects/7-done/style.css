@@ -1,0 +1,33 @@
+.projects {
+  text-align: center;
+}
+.projects .item {
+  position: relative;
+  border-radius: var(--b-radius);
+  overflow: hidden;
+}
+.projects .img-container img {
+  object-fit: cover;
+}
+.projects .info {
+  position: absolute;
+  bottom: var(--p-sm);
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and (min-width: 37.5rem) {
+  .projects .group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--p-lg);
+  }
+}
+@media screen and (min-width: 64rem) {
+  .projects .group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */

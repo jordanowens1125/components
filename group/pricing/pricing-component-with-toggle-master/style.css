@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --primary-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --light-gray: hsl(234, 14%, 74%);
+  --white: hsl(240, 78%, 98%);
+  --horizontal: linear-gradient(
+    0.25turn,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  --dark-gray: hsl(232, 13%, 33%);
+  --vertical: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --text-color: hsl(233, 13%, 49%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  color: var(--text-color);
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* toggle css */
+.toggle-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  color: var(--light-gray);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--horizontal);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: var(--horizontal);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary-gradient);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* toggle css */
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 70vw;
+}
+
+.card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid hsl(236, 81%, 96%);
+  -webkit-box-shadow: 0px 0px 40px -20px hsl(236, 72%, 79%);
+  -moz-box-shadow: 0px 0px 40px -20px hsl(236, 72%, 79%);
+  box-shadow: 0px 0px 40px -20px hsl(236, 72%, 79%);
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.card * {
+  width: 100%;
+  gap: 20px;
+}
+
+.card-heading {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 0;
+}
+
+.features li {
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.features :nth-last-child(1) {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: var(--horizontal);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+button:hover {
+  background: inherit;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid var(--dark-gray);
+  cursor: pointer;
+}
+
+.price {
+  color: inherit;
+  font-size: 2.5em;
+}
+
+.hidden{
+  display: none;
+  transition: 1s;
+  transform-origin: left;
+}
+
+.preferred {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: var(--white);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.preferred button {
+  background: unset;
+  background-color: var(--white);
+  color: hsl(237, 63%, 64%);
+}
+
+.preferred button:hover {
+  color: inherit;
+  background-color: inherit;
+  border: 1px solid var(--white);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    padding: 1% 20%;
+  }
+  .cards {
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .card:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

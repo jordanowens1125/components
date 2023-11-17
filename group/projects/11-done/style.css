@@ -1,0 +1,29 @@
+.projects {
+  text-align: center;
+  padding: var(--p-lg) 0;
+}
+.projects .group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+}
+.projects .img-container {
+  max-height: 30vh;
+  aspect-ratio: 1;
+}
+.projects .img-container img {
+  object-fit: cover;
+}
+.projects .cs-button-solid {
+  margin: auto;
+  margin-top: var(--p-lg);
+  grid-column: -1/1;
+  width: fit-content;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .projects .group {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
