@@ -1,0 +1,90 @@
+* {
+  // border: 1px red solid;
+}
+@media screen and (min-width: 0) {
+  .projects {
+  }
+}
+
+.projects {
+  .heading,
+  .sub-h {
+    margin: 0;
+  }
+  .cs-button-solid {
+    order: 8;
+  }
+  img {
+    object-fit: cover;
+  }
+
+  .item {
+    position: relative;
+  }
+  .info {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .projects {
+    .group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .sub-h,
+    .heading,
+    .text {
+      grid-column: -1/1;
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .projects {
+    .group {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-areas:
+        "sub          img2"
+        "heading      img2"
+        "img1         img2"
+        "img1         img2"
+        "img1         img3"
+        "img1         img3"
+        "text         img3"
+        "button       img3";
+    }
+    .item {
+      grid-row: span 2;
+    }
+    .sub-h,
+    .heading,
+    .text {
+      grid-column: unset;
+    }
+    .sub-h {
+      grid-area: sub;
+    }
+    .heading {
+      grid-area: heading;
+    }
+    .text {
+      grid-area: text;
+    }
+    .cs-button-solid {
+      padding-bottom: var(--p-md);
+      grid-area: button;
+    }
+    .group .item:nth-child(5) {
+      grid-area: img1;
+    }
+    .group .item:nth-child(6) {
+      grid-area: img2;
+    }
+    .group .item:nth-child(7) {
+      grid-area: img3;
+    }
+  }
+}
