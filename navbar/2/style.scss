@@ -1,0 +1,126 @@
+// * {
+//   border: 1px red solid;
+// }
+
+body {
+  height: 1000vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--p-sm) 0;
+  --inline-spacing: var(--p-sm);
+  --icon-width: 2rem;
+
+  --line-height: 0.2rem;
+
+  .lines {
+    margin-right: var(--inline-spacing);
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-s);
+    width: var(--icon-width);
+    .line {
+      height: var(--line-height);
+      background-color: var(--black);
+    }
+  }
+
+  .lines:hover + nav {
+    left: 0;
+  }
+
+  #close-mobile-nav {
+    width: var(--icon-width);
+    position: absolute;
+    aspect-ratio: 1;
+    right: var(--inline-spacing);
+    top: var(--inline-spacing);
+    transform: translateY(50%);
+    z-index: 999;
+  }
+
+  #close-mobile-nav::before,
+  #close-mobile-nav::after {
+    content: "";
+    display: block;
+    background-color: var(--black);
+    height: var(--line-height);
+    width: 100%;
+    position: absolute;
+  }
+
+  #close-mobile-nav::before {
+    transform: rotate(45deg);
+  }
+
+  #close-mobile-nav::after {
+    transform: rotate(-45deg);
+  }
+
+  .logo {
+    margin-left: var(--inline-spacing);
+  }
+
+  nav {
+    color: var(--white);
+    --mobile-width: 85vw;
+    --section-space: var(--p-ml);
+    padding-top: var(--section-space);
+    background-color: var(--primary);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    // left: calc(var(--mobile-width) * -1);
+    width: var(--mobile-width);
+    min-width: 15rem;
+    transition: 0.4s;
+    overflow-y: auto;
+    z-index: 100;
+    ul {
+      --link-gap: var(--p-m);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: var(--link-gap);
+      li ul {
+        margin-top: var(--link-gap);
+
+        // max-height: 0;
+        // overflow: hidden;
+      }
+      li {
+        position: relative;
+      }
+      .logo {
+        margin: 0;
+        margin-bottom: var(--section-space);
+      }
+      .call {
+        margin-top: var(--section-space);
+      }
+      .dropdown > :first-child:after {
+        content: "";
+        display: block;
+        background-color: green;
+        width: 1rem;
+        aspect-ratio: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}

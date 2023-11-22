@@ -1,0 +1,109 @@
+body {
+  height: 1000vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--p-sm) 0;
+  --inline-spacing: var(--p-sm);
+  --icon-width: 2rem;
+  --line-height: 0.2rem;
+}
+header .lines {
+  margin-right: var(--inline-spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--p-s);
+  width: var(--icon-width);
+}
+header .lines .line {
+  height: var(--line-height);
+  background-color: var(--black);
+}
+header .lines:hover + nav {
+  left: 0;
+}
+header #close-mobile-nav {
+  width: var(--icon-width);
+  position: absolute;
+  aspect-ratio: 1;
+  right: var(--inline-spacing);
+  top: var(--inline-spacing);
+  transform: translateY(50%);
+  z-index: 999;
+}
+header #close-mobile-nav::before,
+header #close-mobile-nav::after {
+  content: "";
+  display: block;
+  background-color: var(--black);
+  height: var(--line-height);
+  width: 100%;
+  position: absolute;
+}
+header #close-mobile-nav::before {
+  transform: rotate(45deg);
+}
+header #close-mobile-nav::after {
+  transform: rotate(-45deg);
+}
+header .logo {
+  margin-left: var(--inline-spacing);
+}
+header nav {
+  color: var(--white);
+  --mobile-width: 85vw;
+  --section-space: var(--p-ml);
+  padding-top: var(--section-space);
+  background-color: var(--primary);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: var(--mobile-width);
+  min-width: 15rem;
+  transition: 0.4s;
+  overflow-y: auto;
+  z-index: 100;
+}
+header nav ul {
+  --link-gap: var(--p-m);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--link-gap);
+}
+header nav ul li ul {
+  margin-top: var(--link-gap);
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul .logo {
+  margin: 0;
+  margin-bottom: var(--section-space);
+}
+header nav ul .call {
+  margin-top: var(--section-space);
+}
+header nav ul .dropdown > :first-child:after {
+  content: "";
+  display: block;
+  background-color: green;
+  width: 1rem;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}/*# sourceMappingURL=style.css.map */
