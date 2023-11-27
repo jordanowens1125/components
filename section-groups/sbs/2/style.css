@@ -20,9 +20,7 @@
 
 .img-container,
 .group {
-  width: 100%;
-  height: 100%;
-  padding: var(--p-sm);
+  padding: var(--p-m);
 }
 
 .item,
@@ -34,7 +32,6 @@
 .group-heading {
   grid-column: 1 / span 2;
   color: var(--primary);
-  margin-bottom: var(--p-s);
 }
 
 .item {
@@ -56,7 +53,7 @@
   .group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30px; /* first one 20px */
+    grid-template-rows: min-content; /* first one 20px */
     grid-auto-rows: 1fr; /* all the others 1fr */
   }
 }
