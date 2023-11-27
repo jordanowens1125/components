@@ -1,49 +1,53 @@
+.section-name .heading span {
+  color: var(--primary);
+}
 .section-name .group {
   margin-top: var(--p-md);
 }
+.section-name .content-group {
+  display: flex;
+  flex-direction: row;
+  gap: var(--p-md);
+}
 .section-name .item {
-  padding: var(--p-md);
-  padding-bottom: var(--p-ml);
+  padding: var(--p-lg) var(--p-md);
   border-radius: var(--b-radius);
   -moz-box-shadow: var(--box-shadow);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   position: relative;
+  border-bottom: 0.75rem var(--primary) solid;
 }
-.section-name .item div {
-  display: flex;
-}
-.section-name .item div .count {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
+.section-name .item .count {
   font-size: 2rem;
-}
-.section-name .item span.more {
-  background-color: var(--primary);
-  color: var(--white);
-  font-size: 1.75rem;
-  display: flex;
+  font-weight: bold;
+  opacity: 0.25;
   position: absolute;
+  top: 0.25rem;
+  right: 0.75rem;
+}
+.section-name .item i {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.section-name .item .row {
+  display: flex;
+  align-items: center;
+  gap: var(--p-s);
+  font-weight: bold;
+}
+.section-name .item .row i {
+  font-size: 0.5rem;
+  border-radius: 50%;
+  border: 1px var(--primary) solid;
+  height: 75%;
+  aspect-ratio: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(1rem, 10vw, 2rem);
-  height: clamp(1rem, 10vw, 2rem);
-  border-radius: 50%;
-  bottom: 0;
-  transform: translateY(50%);
-  z-index: 5;
 }
-.section-name .item::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  height: 200%;
-  aspect-ratio: 1;
-  background-color: var(--primary);
-  border-radius: 50%;
-  left: -80%;
-  top: -90%;
-  opacity: 0.1;
+.section-name .item .row p {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 31.25rem) {
@@ -68,6 +72,14 @@
   .section-name .top .heading {
     margin-bottom: 0;
     width: 95%;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .section-name .top {
+    grid-template-columns: 3fr 6fr;
+  }
+  .section-name .top .content {
+    width: 75%;
   }
   .section-name .group {
     display: grid;

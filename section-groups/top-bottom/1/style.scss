@@ -1,0 +1,107 @@
+* {
+  // border: 1px red solid;
+}
+
+.section-name {
+  .heading {
+    span {
+      color: var(--primary);
+    }
+  }
+  .group {
+    margin-top: var(--p-md);
+  }
+  .content-group {
+    display: flex;
+    flex-direction: row;
+    gap: var(--p-md);
+  }
+  .item {
+    padding: var(--p-lg) var(--p-md);
+    border-radius: var(--b-radius);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border-bottom: 0.75rem var(--primary) solid;
+    // overflow: hidden;
+    .count {
+      // -webkit-text-fill-color: transparent;
+      // -webkit-text-stroke: 1px;
+      font-size: 2rem;
+      font-weight: bold;
+      opacity: 0.25;
+      position: absolute;
+      top: 0.25rem;
+      right: 0.75rem;
+    }
+    i {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      gap: var(--p-s);
+      font-weight: bold;
+      i {
+        font-size: 0.5rem;
+        border-radius: 50%;
+        border: 1px var(--primary) solid;
+        height: 75%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 31.25rem) {
+  .section-name {
+    .group {
+      display: grid;
+      row-gap: var(--p-lg);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .section-name {
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--p-lg);
+      row-gap: var(--p-s);
+      grid-template-rows: min-content 1fr;
+      margin-bottom: var(--p-ml);
+      .sub-h {
+        grid-column: 1/-1;
+      }
+      .heading {
+        margin-bottom: 0;
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section-name {
+    .top {
+      grid-template-columns: 3fr 6fr;
+      .content {
+        width: 75%;
+      }
+    }
+    .group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

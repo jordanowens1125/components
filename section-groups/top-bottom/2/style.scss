@@ -14,8 +14,16 @@
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     position: relative;
-
-    span {
+    // overflow: hidden;
+    div {
+      display: flex;
+      .count {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        font-size: 2rem;
+      }
+    }
+    span.more {
       background-color: var(--primary);
       color: var(--white);
       font-size: 1.75rem;
@@ -23,16 +31,27 @@
       position: absolute;
       align-items: center;
       justify-content: center;
-      width: clamp(1rem,10vw, 2rem);
-      height: clamp(1rem,10vw, 2rem);
+      width: clamp(1rem, 10vw, 2rem);
+      height: clamp(1rem, 10vw, 2rem);
       border-radius: 50%;
       bottom: 0;
       transform: translateY(50%);
       z-index: 5;
     }
   }
+  .item::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 200%;
+    aspect-ratio: 1;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: -80%;
+    top: -90%;
+    opacity: .1;
+  }
 }
-
 
 @media screen and (min-width: 31.25rem) {
   .section-name {
@@ -43,7 +62,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 48rem) {
   .section-name {
