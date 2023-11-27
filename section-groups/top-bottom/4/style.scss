@@ -1,0 +1,105 @@
+* {
+  // border: 1px red solid;
+}
+
+.section-name {
+  .heading {
+    span {
+      color: var(--primary);
+    }
+  }
+  .group {
+    margin-top: var(--p-md);
+    border-top: var(--borderColor) 1px solid;
+    border-bottom: var(--borderColor) 1px solid;
+    gap: 0;
+  }
+  .content {
+    margin: auto;
+    margin-right: 0;
+  }
+  .content-group {
+    display: flex;
+    flex-direction: row;
+    gap: var(--p-md);
+    width: fit-content;
+  }
+
+  .item {
+    padding: var(--p-md);
+    padding-left: var(--p-xs);
+    border-bottom: 1px solid var(--borderColor);
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas:
+      "i heading"
+      "i p";
+      row-gap: 0;
+      .item-h{
+        margin: auto;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+      }
+    i {
+      font-size: 2rem;
+      color: var(--primary);
+      width: fit-content;
+      aspect-ratio: 1;
+      padding: var(--p-m);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--borderColor);
+      grid-template-rows: 1/-1;
+      grid-area: i;
+    }
+  }
+}
+
+@media screen and (min-width: 31.25rem) {
+  .section-name {
+    .group {
+      display: grid;
+      row-gap: var(--p-lg);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+      border-right: 1px var(--borderColor) solid;
+      padding: var(--p-md);
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .section-name {
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--p-lg);
+      row-gap: var(--p-s);
+      grid-template-rows: min-content 1fr;
+      margin-bottom: var(--p-ml);
+      .sub-h {
+        grid-column: 1/-1;
+      }
+      .heading {
+        margin-bottom: 0;
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section-name {
+    .top {
+      grid-template-columns: 3fr 6fr;
+    }
+    .group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
